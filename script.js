@@ -64,11 +64,12 @@ overlay.addEventListener('click', () => {
 const musicPlayer = new Audio();
 musicPlayer.loop = false;
 const musicData = [
-  { src: 'sound/fifai.mp3', name: 'Nhạc nền Fifai', img: 'img/fifai.png' },
-  { src: 'sound/conan.mp3', name: 'Nhạc nền Conan', img: 'img/conan_mini.png' },
-  { src: 'sound/kaito.mp3', name: 'Nhạc nền Kaito Kid', img: 'img/kaito_mini.png' },
+  { src: 'sound/fifai.mp3', name: 'Fifai', img: 'img/fifai.png' },
+  { src: 'sound/conan.mp3', name: 'Conan', img: 'img/conan_mini.png' },
+  { src: 'sound/kaito.mp3', name: 'Kaito Kid', img: 'img/kaito_mini.png' },
   { src: 'sound/robin.mp3', name: 'Welcome to my World - Robin', img: 'img/robin.png' },
   { src: 'sound/ndcm.mp3', name: 'Nắng dưới chân mây', img: 'img/ndcm.png' },
+  { src: 'sound/13314.mp3', name: 'Valhein Thứ Nguyên Vệ Thần', img: 'img/13314head.jpg' },
 ];
 let musicEnabled = localStorage.getItem('musicEnabled');
 if (musicEnabled === null) {
@@ -136,12 +137,14 @@ function openMusicPopup() {
 
   
     if (item.src === currentMusic) {
-      const selectedSpan = document.createElement('span');
-      selectedSpan.textContent = ' - Đang chọn';
-      selectedSpan.style.color = 'green';
-      text.appendChild(selectedSpan);
-      li.style.fontWeight = 'bold';
-    }
+  const selectedSpan = document.createElement('span');
+  selectedSpan.textContent = 'Đang chọn';
+  selectedSpan.style.color = 'green';
+  selectedSpan.style.display = 'block'; 
+  text.appendChild(selectedSpan);
+  
+  li.style.fontWeight = 'bold';
+}
 
     li.appendChild(img);
     li.appendChild(text);
@@ -205,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
       popup.style.opacity = "1";
     }); 
     let countdown = 0;
-    closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
+    //closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
     closeBtn.disabled = true;
     closeBtn.style.opacity = "0.5";
     closeBtn.style.pointerEvents = "none";
