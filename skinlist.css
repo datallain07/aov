@@ -1,0 +1,105 @@
+#skin-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  height: 0;
+}
+#skin-list.expanded {
+  margin-top: 10px;
+}
+.mod-card {
+  flex: 1 1 300px;
+  max-width: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 60px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: height 0.4s ease;
+}
+.mod-card img.bg {
+  width: 100%;
+  display: block;
+}
+.mod-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 75px 10px 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.mod-mini {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+.mod-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: inherit;
+}
+.mod-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mod-desc {
+  font-size: 10px;
+  color: #fff;
+  margin-top: -2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.mod-champion-note {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: -2px;
+}
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00ffd0;
+  color: black;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.download-container {
+  position: absolute;
+  bottom: 16px;
+  right: 7px;
+  z-index: 50;
+}
+.download-btn-main {
+  color: #000 !important;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 1;
+} 

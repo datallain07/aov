@@ -1,0 +1,67 @@
+body.dark-mode,
+body.dark-mode .app-header,
+body.dark-mode header,
+body.dark-mode .menu-item,
+body.dark-mode .menu2-item,
+body.dark-mode .menu3-item,
+body.dark-mode .popup-content,
+body.dark-mode .side-menu,
+body.dark-mode .donate-content,
+body.dark-mode .credit,
+body.dark-mode .menu {
+  background-color: #000000 !important;
+  color: #eee !important;
+  border-color: rgba(255,255,255,0.2) !important;
+}
+body.dark-mode .label-top-right,
+body.dark-mode .popup-title,
+body.dark-mode .popup-message,
+body.dark-mode .donate-message,
+body.dark-mode .menu-item .text small {
+  color: #ccc !important;
+}
+body.dark-mode img[src*="icons/"]:not([src$="daticon.png"]) {
+  filter: invert(1) hue-rotate(180deg);
+}
+body.dark-mode .dat2-item {
+  background-color: #111 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+body.dark-mode .dat2-item .text strong {
+  color: #fff !important;
+}
+body.dark-mode .dat2-item .text small {
+  color: #aaa !important;
+}
+body.dark-mode .splash-container img {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+body.dark-mode .splash-container {
+  background-color: transparent; 
+}
+body.dark-mode #search {
+  background: #222 !important;
+  color: #eee !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .dat2 {
+  background-color: transparent;
+}
+body.dark-mode .dat2-item {
+  background: #111 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+body.dark-mode .dat2-item .text strong {
+  color: #fff !important;
+}
+body.dark-mode .dat2-item .text small {
+  color: #aaa !important;
+}
+body.dark-mode .dat2-item img.thumb {
+  border-color: rgba(255,255,255,0.2) !important;
+  background-color: #222;
+}
+body.dark-mode .menusettings-item {
+  background: #111 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
