@@ -273,11 +273,11 @@ document.addEventListener('click', function() {
 });
 
 Promise.all([
-  fetch('heroskinshop.json')
+  fetch('heroskinshop.js')
     .then(res => res.ok ? res.json() : [])
     .then(data => heroSkinShop = data)
     .catch(err => {
-      console.error('Lỗi load heroskinshop.json', err);
+      console.error('Lỗi load heroskinshop.js', err);
       heroSkinShop = [];
     }),
   Promise.resolve()
