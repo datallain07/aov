@@ -133,12 +133,12 @@ document.addEventListener("DOMContentLoaded", function() {
       popup.style.opacity = "1";
     });
 
-    let countdown = 0;
+    let countdown = 5;
     closeBtn.disabled = true;
     closeBtn.style.opacity = "0.5";
     closeBtn.style.pointerEvents = "none";
     closeBtn.style.cursor = "not-allowed";
-    //closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
+    closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
 
     const countdownInterval = setInterval(() => {
       countdown--;
