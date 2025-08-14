@@ -1136,5 +1136,5 @@ const skinData =  {
   "59901": "Thiên Tướng - Độ Ách",
   "56300": "Mặc định",
   "59600": "Mặc định",
-  "53709": "Cẩm Y Vệ"
+  "53709": "Cẩm Y Vệ Xích Hổ"
 };
