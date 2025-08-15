@@ -272,10 +272,18 @@ document.addEventListener('click', function() {
   }
 });
 
-heroSkinShop = window.heroSkinShop || [];
-(async () => {
+Promise.all([
+  fetch('heroskinshop.json')
+    .then(res => res.ok ? res.json() : [])
+    .then(data => heroSkinShop = data)
+    .catch(err => {
+      console.error('Lỗi load heroskinshop.json', err);
+      heroSkinShop = [];
+    }),
+  Promise.resolve()
+]).then(async () => {
   await loadHeroHeads();
   updateHeroNames(showSplashId);
   updateSplashIdVisibility(showSplashId);
   updateSplashLabelVisibility(showSplashLabel);
-})();
+});

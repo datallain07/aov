@@ -1,4 +1,5 @@
-[
+
+window.heroSkinShop = [
     {
         "ID": 17408,
         "LimitLabelPicUrl": "17408.png"
@@ -4759,4 +4760,4 @@
         "ID": 59600,
         "LimitLabelPicUrl": ""
     }
-]
+];
