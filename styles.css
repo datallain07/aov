@@ -433,3 +433,57 @@ input:checked + .slider::before {
 .music-popup-content ul li:hover {
   background: #f0f0f0;
 }
+
+.mod-notice-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 999;
+}
+
+.mod-notice-popup.show {
+  display: flex;
+  opacity: 1;
+}
+
+.mod-notice-popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 320px;
+  max-width: 60%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  pointer-events: auto;
+}
+
+#mod-notice-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.countdown-text {
+  font-size: 10px;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 6px;
+}
+
+.close-hint {
+  font-size: 10px;
+  color: rgba(0,0,0,0.5);
+  
+}
+.mod-notice-popup-content label {
+  font-size: 10px;
+  color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+}
+.mod-notice-popup-content label input {
+  transform: scale(1.1);
+}

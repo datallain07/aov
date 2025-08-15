@@ -252,13 +252,24 @@
     <button id="close-popup"></button>
   </div>
 </div>
+<div id="mod-notice-popup" class="mod-notice-popup">
+  <div class="mod-notice-popup-content">
+    <p id="mod-notice-text">Lưu ý: Nếu không tìm thấy bản mod bạn cần ở đây, là do game đã update và file mod không còn sử dụng được nữa, vui lòng chờ admin ra mod mới, không nhắn tin thúc giục, làm phiền admin. Cảm ơn!</p>
+    <p id="mod-notice-countdown" class="countdown-text"></p>
+    <p id="mod-notice-close-hint" class="close-hint" style="display:none;">Click ra ngoài để đóng</p>
+    <label style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+      <input type="checkbox" id="mod-notice-dont-show">
+      Đã đọc và không hiển thị lại
+    </label>
+  </div>
+</div>
 <div id="musicPopup" class="music-popup">
   <div class="music-popup-content">
     <h3>Chọn nhạc nền</h3>
     <ul id="musicList"></ul>
   </div>
 </div>
-<div class="credit">©datallain07 | Ver1.3.4</div>
+<div class="credit">©datallain07 | Ver1.3.5</div>
 <script>
 const skins = [
 {
@@ -305,6 +316,7 @@ color: "255, 200, 50",
 <script src="skinlist.js"></script>
 <script src="lowquality.js"></script>
 <script src="settingsanimation.js"></script>
+<script src="chonmod.js"></script>
 <script src="check.js"></script>
 </body>
 </html>
