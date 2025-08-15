@@ -1,4 +1,4 @@
-localStorage.removeItem("hideModNoticePopup");
+//localStorage.removeItem("hideModNoticePopup");
 document.addEventListener("DOMContentLoaded", function () {
   const chonModBtn = document.getElementById("chonmod");
   const modNoticePopup = document.getElementById("mod-notice-popup");
