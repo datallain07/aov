@@ -1,5 +1,60 @@
-
 window.heroSkinShop = [
+    {
+        "ID": 12106,
+        "LimitLabelPicUrl": "T35DirectSale.png"
+    },
+    {
+        "ID": 19109,
+        "LimitLabelPicUrl": "T3limited.png"
+    },
+    {
+        "ID": 19009,
+        "LimitLabelPicUrl": "T2limited.png"
+    },
+    {
+        "ID": 10507,
+        "LimitLabelPicUrl": "10507.png"
+    },
+    {
+        "ID": 19611,
+        "LimitLabelPicUrl": "T35limited.png"
+    },
+    {
+        "ID": 14911,
+        "LimitLabelPicUrl": "14911.png"
+    },
+    {
+        "ID": 12012,
+        "LimitLabelPicUrl": "12012.png"
+    },
+    {
+        "ID": 53709,
+        "LimitLabelPicUrl": "53709.png"
+    },
+    {
+        "ID": 19312,
+        "LimitLabelPicUrl": "T5limited.png"
+    },
+    {
+        "ID": 15610,
+        "LimitLabelPicUrl": "T4DirectSale.png"
+    },
+    {
+        "ID": 17708,
+        "LimitLabelPicUrl": "T4DirectSale.png"
+    },
+    {
+        "ID": 12104,
+        "LimitLabelPicUrl": "T6DirectSale.png"
+    },
+    {
+        "ID": 59801,
+        "LimitLabelPicUrl": "T6limited.png"
+    },
+    {
+        "ID": 53207,
+        "LimitLabelPicUrl": "T5limited.png"
+    },
     {
         "ID": 17408,
         "LimitLabelPicUrl": "17408.png"
@@ -15,10 +70,6 @@ window.heroSkinShop = [
     {
         "ID": 53512,
         "LimitLabelPicUrl": "53512.png"
-    },
-    {
-        "ID": 19312,
-        "LimitLabelPicUrl": "19312.png"
     },
     {
         "ID": 11707,
@@ -51,10 +102,6 @@ window.heroSkinShop = [
     {
         "ID": 52208,
         "LimitLabelPicUrl": "T6DirectSale.png"
-    },
-    {
-        "ID": 19109,
-        "LimitLabelPicUrl": "19109.png"
     },
     {
         "ID": 12609,
@@ -749,10 +796,6 @@ window.heroSkinShop = [
         "LimitLabelPicUrl": "T3limited.png"
     },
     {
-        "ID": 12106,
-        "LimitLabelPicUrl": "T35limited.png"
-    },
-    {
         "ID": 15412,
         "LimitLabelPicUrl": "T2limited.png"
     },
@@ -799,10 +842,6 @@ window.heroSkinShop = [
     {
         "ID": 19011,
         "LimitLabelPicUrl": "19011.png"
-    },
-    {
-        "ID": 19611,
-        "LimitLabelPicUrl": "19611.png"
     },
     {
         "ID": 19015,
@@ -2501,10 +2540,6 @@ window.heroSkinShop = [
         "LimitLabelPicUrl": "T5limited.png"
     },
     {
-        "ID": 19009,
-        "LimitLabelPicUrl": "Label_SSS_Limited.png"
-    },
-    {
         "ID": 19605,
         "LimitLabelPicUrl": "T3limited.png"
     },
@@ -2822,18 +2857,6 @@ window.heroSkinShop = [
     },
     {
         "ID": 54304,
-        "LimitLabelPicUrl": "T6limited.png"
-    },
-    {
-        "ID": 15610,
-        "LimitLabelPicUrl": "T4limited.png"
-    },
-    {
-        "ID": 17708,
-        "LimitLabelPicUrl": "T4limited.png"
-    },
-    {
-        "ID": 12104,
         "LimitLabelPicUrl": "T6limited.png"
     },
     {
