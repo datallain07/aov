@@ -487,3 +487,9 @@ input:checked + .slider::before {
 .mod-notice-popup-content label input {
   transform: scale(1.1);
 }
+.mod-card .label {
+  display: none;
+}
+.mod-card.expand .label {
+  display: inline-block;
+}
