@@ -1,3 +1,4 @@
+
 body.dark-mode,
 body.dark-mode .app-header,
 body.dark-mode header,
@@ -64,4 +65,7 @@ body.dark-mode .dat2-item img.thumb {
 body.dark-mode .menusettings-item {
   background: #111 !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+body.dark-mode #search::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
 }
