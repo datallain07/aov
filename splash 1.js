@@ -8,51 +8,29 @@ const ID_RANGES = [
 ];
 let heroSkinShop = [];
 
-function showToast(message, duration = 2000) {
-  const toast = document.getElementById('toast');
-  const messageEl = document.getElementById('toast-message');
-  if (!toast || !messageEl) return;
-  
-  messageEl.textContent = message;
-  toast.classList.remove('show');
-  void toast.offsetWidth;
-  toast.classList.add('show');
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, duration);
-}
-
-function checkImageExists(url, noCache = false) {
+function checkImageExists(url) {
   const cacheKey = 'image_exists_' + url;
-
-  if (!noCache) {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached !== null) {
-      const data = JSON.parse(cached);
-      const maxAge = 1000 * 60 * 60 * 24 * 365;
-      if (Date.now() - data.timestamp < maxAge) {
-        return Promise.resolve(data.exists);
-      } else {
-        localStorage.removeItem(cacheKey);
-      }
+  const cached = localStorage.getItem(cacheKey);
+  if (cached !== null) {
+    const data = JSON.parse(cached);
+    const maxAge = 1000 * 60 * 60 * 24 * 365;
+    if (Date.now() - data.timestamp < maxAge) {
+      return Promise.resolve(data.exists);
+    } else {
+      localStorage.removeItem(cacheKey);
     }
   }
-
   return new Promise(resolve => {
     const img = new Image();
     img.onload = () => {
-      if (!noCache) {
-        localStorage.setItem(cacheKey, JSON.stringify({ exists: true, timestamp: Date.now() }));
-      }
+      localStorage.setItem(cacheKey, JSON.stringify({ exists: true, timestamp: Date.now() }));
       resolve(true);
     };
     img.onerror = () => {
-      if (!noCache) {
-        localStorage.setItem(cacheKey, JSON.stringify({ exists: false, timestamp: Date.now() }));
-      }
+      localStorage.setItem(cacheKey, JSON.stringify({ exists: false, timestamp: Date.now() }));
       resolve(false);
     };
-    img.src = url + (noCache ? `?t=${Date.now()}` : '');
+    img.src = url;
   });
 }
 
@@ -63,41 +41,30 @@ async function showHeroImages(heroId, splashDiv, card) {
     const otherSplash = el.querySelector('.splash-container');
     if (otherSplash) otherSplash.innerHTML = '';
   });
-
-  if (!isActive) {
-    showToast("Đang tải, vui lòng đợi giây lát...");
-  }
-
   if (isActive) {
     splashDiv.innerHTML = '';
     card.classList.remove('active');
     return;
   }
-
   card.classList.add('active');
   splashDiv.innerHTML = '<small style="color: gray;"></small>';
   let found = false;
-
   for (let i = 0; i < 100; i++) {
     const suffix = String(i).padStart(2, '0');
     const fullId = `${heroId}${suffix}`;
     const bigUrl = `https://dl.ops.kgtw.garenanow.com/CHT/HeroTrainingLoadingNew_B36/${fullId}.jpg`;
-    const exists = await checkImageExists(bigUrl, true);
-
+    const exists = await checkImageExists(bigUrl);
     if (exists) {
       if (!found) splashDiv.innerHTML = '';
       found = true;
-
       const wrapper = document.createElement('div');
       wrapper.style.position = 'relative';
       wrapper.style.marginTop = '8px';
-
       const img = document.createElement('img');
       img.src = bigUrl;
       img.alt = `${fullId}`;
       img.style.width = '100%';
       img.style.borderRadius = '12px';
-
       const idTag = document.createElement('div');
       const idName = (typeof skinData !== 'undefined' && skinData[fullId]) ? `${fullId}: ${skinData[fullId]}` : fullId;
       idTag.textContent = idName;
@@ -112,16 +79,13 @@ async function showHeroImages(heroId, splashDiv, card) {
       idTag.style.pointerEvents = 'none';
       idTag.classList.add('splash-id');
       idTag.style.display = showSplashId ? 'block' : 'none';
-
       let labelFile = `${fullId}.png`;
       const skinInfo = heroSkinShop.find(s => String(s.ID) === String(fullId));
       if (skinInfo && skinInfo.LimitLabelPicUrl) {
         labelFile = skinInfo.LimitLabelPicUrl;
       }
-
       const labelUrl = `https://dl.ops.kgvn.garenanow.com/hok/SkinLabel/${labelFile}`;
-      const labelExists = await checkImageExists(labelUrl, true); 
-
+      const labelExists = await checkImageExists(labelUrl);
       if (labelExists) {
         const labelImg = document.createElement('img');
         labelImg.src = labelUrl;
@@ -145,13 +109,11 @@ async function showHeroImages(heroId, splashDiv, card) {
         labelImg.classList.add('splash-label');
         wrapper.appendChild(labelImg);
       }
-
       wrapper.appendChild(img);
       wrapper.appendChild(idTag);
       splashDiv.appendChild(wrapper);
     }
   }
-
   if (!found) {
     splashDiv.innerHTML = '<small style="color: red;">Không tìm thấy splash art.</small>';
   }
@@ -164,9 +126,7 @@ async function loadHeroHeads() {
       allIDs.push(id);
     }
   }
-
   allIDs.sort((a, b) => a - b);
-
   for (const heroId of allIDs) {
     const idStr = String(heroId).padStart(3, '0');
     const headUrl = `https://dl.ops.kgtw.garenanow.com/CHT/HeroHeadPath/30${idStr}0head.jpg`;
@@ -175,15 +135,12 @@ async function loadHeroHeads() {
       const card = document.createElement('div');
       card.className = 'dat2-item';
       card.dataset.name = (heroList[heroId] || "").toLowerCase();
-
       const header = document.createElement('div');
       header.className = 'dat2-header';
-
       const img = document.createElement('img');
       img.src = headUrl;
       img.className = 'thumb';
       img.alt = `${heroId}`;
-
       const textDiv = document.createElement('div');
       textDiv.className = 'text';
       const nameEl = document.createElement('strong');
@@ -194,18 +151,14 @@ async function loadHeroHeads() {
       textDiv.appendChild(small);
       header.appendChild(img);
       header.appendChild(textDiv);
-
       const splashContainer = document.createElement('div');
       splashContainer.className = 'splash-container';
-
       card.appendChild(header);
       card.appendChild(splashContainer);
-
       header.addEventListener('click', (e) => {
         e.stopPropagation();
         showHeroImages(heroId, splashContainer, card);
       });
-
       headGrid.appendChild(card);
     }
   }

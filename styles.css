@@ -493,3 +493,29 @@ input:checked + .slider::before {
 .mod-card.expand .label {
   display: inline-block;
 }
+.toast {
+  position: fixed;
+  top: 90%;
+  left: 49%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: rgba(40, 40, 40, 0.96);
+  color: white;
+  border-radius: 16px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.35s ease;
+  pointer-events: none;
+  z-index: 99999;
+}
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.toast-text {
+  font-size: 15px;
+  line-height: 1.3;
+}
