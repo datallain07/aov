@@ -126,6 +126,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const closeBtn = document.getElementById("close-popup");
   let canClose = false;
 
+  const closeForeverBtn = document.getElementById('close-forever');
+
+  if (!localStorage.getItem('hideWelcome')) {
   setTimeout(() => {
     popup.style.display = "flex";
     requestAnimationFrame(() => {
@@ -155,6 +158,12 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }, 1000);
   }, 100);
+  }
+
+  closeForeverBtn.addEventListener('click', () => {
+  localStorage.setItem('hideWelcome', 'true');
+  closePopup();
+  });
 
   function closePopup() {
     if (!canClose) return;
