@@ -149,7 +149,7 @@
       <img src="icons/image.png" class="icon-img">
       <div class="text">
         <strong>THƯ VIỆN SPLASH ART AOV</strong>
-        <small>Click để xem splash art tướng</small>
+        <small>Click để xem splash art (tốn nhiều dữ liệu, nên sử dụng wifi)</small>
         <div id="splash-container" class="hidden">
           <input id="search" placeholder="🔎 Tìm kiếm bằng id hoặc tên..." />
           <div class="dat2" id="head-grid"></div>
@@ -265,51 +265,75 @@
     <span id="toast-message"></span>
   </div>
 </div>
-
-<div class="credit">©datallain07 | Ver1.5.8</div><br>
+<div id="dlPopupX" class="dl-popup-x">
+    <div class="dl-popup-box-x">
+        <img id="dlImgX" class="dl-popup-img-x" src="" alt="Skin">
+        <div class="dl-popup-title-x" id="dlTitleX">Bạn muốn tải xuống mod cho?</div>
+        <div class="dl-btn-wrap-x">
+            <a id="dlAndroidX" class="dl-btn-x dl-android-x" href="#" target="_blank">Android</a>
+            <a id="dlIOSX" class="dl-btn-x dl-ios-x" href="#" target="_blank">iOS</a>
+        </div>
+    </div>
+</div>
 <script>
 const skins = [
 {
+champion: "Airi",
+name: "Skirk",
+label: "Mới nhất, tải lên ngày 17thg11",
+Android: "https://link4m.com/25TCD",
+IOS: "https://link4m.com/0QCRD",
+bgImg: "img/skirk.png",
+miniImg: "img/skirk_mini.png",
+popImg: "img/skirk_pop.png",
+desc: "Effects - Sound - Button",
+color: "170, 225, 255",
+},
+{
 champion: "Amily",
 name: "Sparkle",
-IOS: "https://link4m.com/yJJBnE",
+label: "Mới nhất, tải lên ngày 14thg11",
 Android: "https://link4m.com/0GIjb",
+IOS: "https://link4m.com/yJJBnE",
 bgImg: "img/sparkle.png",
 miniImg: "img/sparkle_mini.png",
-label: "Mới nhất, tải lên ngày 14thg11",
+popImg: "img/sparkle_pop.png",
 desc: "Effects - Sound",
 color: "255, 50, 100",
 },
 {
 champion: "Florentino",
 name: "Furina",
-IOS: "https://link4m.com/D7BS1",
+label: "Mới nhất, tải lên ngày 14thg11",
 Android: "https://link4m.com/thoqI9K3",
+IOS: "https://link4m.com/D7BS1",
 bgImg: "img/furina.png",
 miniImg: "img/furina_mini.png",
-label: "Mới nhất, tải lên ngày 14thg11",
+popImg: "img/furina_pop.png",
 desc: "Effects - Sound - Button",
 color: "65, 180, 255",
 },
 {
 champion: "Nakroth",
 name: "Xiao",
-IOS: "https://link4m.com/Ks9ux9y",
+label: "Mới nhất, tải lên ngày 13thg11",
 Android: "https://link4m.com/ddnr5",
+IOS: "https://link4m.com/Ks9ux9y",
 bgImg: "img/xiao.png",
 miniImg: "img/xiao_mini.png",
-label: "Mới nhất, tải lên ngày 13thg11",
+popImg: "img/xiao_pop.png",
 desc: "Effects - Sound - Button",
 color: "65, 255, 210",
 },
 {
 champion: "Wiro",
 name: "Mặc định",
-IOS: "https://link4m.com/HP8hrEE",
+label: "Cài 1 lần, dùng đến khi game sập",
 Android: "https://link4m.com/HP8hrEE",
+IOS: "https://link4m.com/HP8hrEE",
 bgImg: "img/19400.jpg",
 miniImg: "img/301940head.jpg",
-label: "Cài 1 lần, dùng đến khi game sập",
+popImg: "img/194_pop.png",
 desc: "Effects - Sound - Button - Notify",
 color: "255, 200, 50",
 }
@@ -328,4 +352,5 @@ color: "255, 200, 50",
 <script src="chonmod.js"></script>
 <script src="check.js"></script>
 </body>
+<div class="credit">©datallain07 | Ver1.6.0</div><br>
 </html>

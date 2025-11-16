@@ -70,3 +70,20 @@ body.dark-mode .menusettings-item {
 body.dark-mode #search::placeholder {
   color: rgba(255, 255, 255, 0.4) !important;
 }
+
+body.dark-mode .dl-popup-box-x {
+    background: #111 !important;
+    color: #eee; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .dl-popup-img-x {
+    background-color: #222;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+}
+
+body.dark-mode .dl-popup-title-x {
+    color: #eee;
+}
+
