@@ -26,18 +26,26 @@ skins.forEach((skin) => {
   
   const descHTML = skin.desc ? `<div class="mod-desc">${skin.desc}</div>` : "";
   
-
   const downloadBtnHTML =
-  skin.IOS && skin.Android ?
-  `
-    <div class="download-container">
-      <div class="download-btn-main" 
-           style="background: ${textColor}; color: black;"
-           onclick="openDownloadPopup2('${skin.popImg}', '${skin.Android}', '${skin.IOS}', 'rgba(${skin.color}, 0.5)')">
-        Tải xuống
-      </div>
-    </div>` :
-  "";
+    skin.IOS && skin.Android ?
+    `
+      <div class="download-container">
+        <div class="download-btn-main" 
+             style="background: ${textColor}; color: black;"
+             onclick="openDownloadPopup2(
+              '${skin.bgImg}',
+              '${skin.miniImg}',
+              '${skin.champion}',
+              '${skin.name}',
+              '${skin.desc}',
+              '${skin.Android}',
+              '${skin.IOS}',
+              'rgba(${skin.color}, 0.5)'
+             )">
+          Tải xuống
+        </div>
+      </div>` :
+    "";
   
   const cardHTML = `
     <div class="mod-card" style="border-color: ${borderColor}; color: ${textColor}" onclick="changeBg('${skin.bgImg}')">
@@ -57,8 +65,6 @@ skins.forEach((skin) => {
   
   skinList.insertAdjacentHTML("beforeend", cardHTML);
 });
-
-
 
 document.querySelectorAll(".mod-card").forEach(function(card) {
   card.addEventListener("click", function() {
@@ -98,28 +104,90 @@ function collapseCard(card) {
   card.style.height = "60px";
 }
 
-
-function openDownloadPopup2(img, androidLink, iosLink, borderColor) {
+function openDownloadPopup2(bgImg, miniImg, champion, name, desc, androidLink, iosLink, borderColor) {
   const popup = document.getElementById("dlPopupX");
+  const box = popup.querySelector(".dl-box");
 
+  
+  box.style.border = `2px solid ${borderColor}`;
+  box.style.borderRadius = "12px";
 
-  const dlImg = document.getElementById("dlImgX");
-  dlImg.src = img;
+  const dlBg = document.getElementById("dlBgX");
+  dlBg.src = bgImg;
+  document.getElementById("dlMiniX").src = miniImg;
 
+  const oldSep = box.querySelector(".bg-separator");
+  if (oldSep) oldSep.remove();
 
-  dlImg.style.border = `3px solid ${borderColor}`;
-  dlImg.style.borderRadius = "8px"; // nếu muốn bo tròn
+  const separator = document.createElement("div");
+  separator.className = "bg-separator";
+  separator.style.height = "2px"; 
+  separator.style.width = "100%";
+  separator.style.background = borderColor; 
+  separator.style.margin = "0px 0";
+  const previewArea = box.querySelector(".preview-area");
+  previewArea.insertAdjacentElement("afterend", separator);
 
-  document.getElementById("dlAndroidX").href = androidLink;
-  document.getElementById("dlIOSX").href = iosLink;
+  const rgb = borderColor.replace("rgba(", "").replace(", 0.5)", "");
+  const textColor = `rgb(${rgb})`;
+  const champElem = document.getElementById("dlChampX");
+  champElem.innerText = champion || "";
+  champElem.style.color = textColor;
+  const nameElem = document.getElementById("dlNameX");
+  nameElem.innerText = name || "";
+  nameElem.style.background = `linear-gradient(to bottom, #fff, ${textColor})`;
+  nameElem.style.webkitBackgroundClip = "text";
+  nameElem.style.webkitTextFillColor = "transparent";
+  nameElem.style.display = "inline-block";
+
+  document.getElementById("dlDescX").innerText = desc || "";
+
+  document.getElementById("dlMiniX").style.borderColor = borderColor;
+
+  const androidBtn = document.getElementById("dlAndroidX");
+  const iosBtn = document.getElementById("dlIOSX");
+  
+  const gradientBg = `linear-gradient(to right, #fff, ${textColor})`;
+  [androidBtn, iosBtn].forEach(btn => {
+    btn.style.background = gradientBg;
+    btn.style.color = "black";
+    btn.style.borderRadius = "6px";
+    btn.style.padding = "8px 16px";
+    btn.style.textDecoration = "none";
+    btn.style.display = "inline-block";
+    btn.style.textAlign = "center";
+    btn.style.width = "auto"; 
+  });
+  popup.classList.add("show");
+  
+  const maxWidth = Math.max(androidBtn.offsetWidth, iosBtn.offsetWidth);
+  androidBtn.style.width = maxWidth + "px";
+  iosBtn.style.width = maxWidth + "px";
+  
+  androidBtn.href = androidLink;
+  iosBtn.href = iosLink;
 
   popup.classList.add("show");
 }
 
 document.getElementById("dlPopupX").addEventListener("click", function(e) {
-  if (e.target === this) {
-    this.classList.remove("show");
-  }
+  if (e.target === this) this.classList.remove("show");
+});
+document.getElementById("dlAndroidX").addEventListener("click", () => {
+  document.getElementById("dlPopupX").classList.remove("show");
+});
+document.getElementById("dlIOSX").addEventListener("click", () => {
+  document.getElementById("dlPopupX").classList.remove("show");
+});
+
+document.getElementById("dlPopupX").addEventListener("click", function(e) {
+  if (e.target === this) this.classList.remove("show");
+});
+document.getElementById("dlAndroidX").addEventListener("click", () => {
+  document.getElementById("dlPopupX").classList.remove("show");
+});
+document.getElementById("dlIOSX").addEventListener("click", () => {
+  document.getElementById("dlPopupX").classList.remove("show");
 });
 
 
@@ -135,11 +203,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   localStorage.setItem("skinsList", JSON.stringify(currentList));
-});
-
-document.getElementById("dlAndroidX").addEventListener("click", () => {
-  document.getElementById("dlPopupX").classList.remove("show");
-});
-document.getElementById("dlIOSX").addEventListener("click", () => {
-  document.getElementById("dlPopupX").classList.remove("show");
 });

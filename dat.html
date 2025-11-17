@@ -265,15 +265,25 @@
     <span id="toast-message"></span>
   </div>
 </div>
-<div id="dlPopupX" class="dl-popup-x">
-    <div class="dl-popup-box-x">
-        <img id="dlImgX" class="dl-popup-img-x" src="">
-        <div class="dl-popup-title-x" id="dlTitleX">Bạn muốn tải xuống mod cho?</div>
-        <div class="dl-btn-wrap-x">
-            <a id="dlAndroidX" class="dl-btn-x dl-android-x" href="#" target="_blank">Android</a>
-            <a id="dlIOSX" class="dl-btn-x dl-ios-x" href="#" target="_blank">iOS</a>
+<div id="dlPopupX" class="dl-popup">
+  <div class="dl-box">
+    <div class="preview-area">
+      <img id="dlBgX" class="preview-bg" />
+      <div class="preview-info">
+        <img id="dlMiniX" class="preview-mini" />
+        <div class="preview-texts">
+          <div id="dlChampX" class="preview-champion"></div>
+          <div id="dlNameX" class="preview-title"></div>
+          <div id="dlDescX" class="preview-desc"></div>
         </div>
+      </div>
     </div>
+    <div class="dl-popup-title-x" id="dlTitleX">Bạn muốn tải xuống mod cho?</div>
+    <div class="dl-buttons">
+      <a id="dlAndroidX" class="dl-btn">Android</a>
+      <a id="dlIOSX" class="dl-btn">iOS</a>
+    </div>
+  </div>
 </div>
 <script>
 const skins = [
@@ -285,7 +295,6 @@ Android: "https://link4m.com/7007kkM",
 IOS: "https://link4m.com/Rbbrq5m0",
 bgImg: "img/skirk.png",
 miniImg: "img/skirk_mini.png",
-popImg: "img/skirk_pop.png",
 desc: "Effects - Sound - Button",
 color: "170, 225, 255",
 },
@@ -297,7 +306,6 @@ Android: "https://link4m.com/0GIjb",
 IOS: "https://link4m.com/yJJBnE",
 bgImg: "img/sparkle.png",
 miniImg: "img/sparkle_mini.png",
-popImg: "img/sparkle_pop.png",
 desc: "Effects - Sound",
 color: "255, 50, 100",
 },
@@ -309,7 +317,6 @@ Android: "https://link4m.com/thoqI9K3",
 IOS: "https://link4m.com/D7BS1",
 bgImg: "img/furina.png",
 miniImg: "img/furina_mini.png",
-popImg: "img/furina_pop.png",
 desc: "Effects - Sound - Button",
 color: "65, 180, 255",
 },
@@ -321,7 +328,6 @@ Android: "https://link4m.com/ddnr5",
 IOS: "https://link4m.com/Ks9ux9y",
 bgImg: "img/xiao.png",
 miniImg: "img/xiao_mini.png",
-popImg: "img/xiao_pop.png",
 desc: "Effects - Sound - Button",
 color: "65, 255, 210",
 },
@@ -333,7 +339,6 @@ Android: "https://link4m.com/HP8hrEE",
 IOS: "https://link4m.com/HP8hrEE",
 bgImg: "img/19400.jpg",
 miniImg: "img/301940head.jpg",
-popImg: "img/194_pop.png",
 desc: "Effects - Sound - Button - Notify",
 color: "255, 200, 50",
 }
@@ -352,5 +357,5 @@ color: "255, 200, 50",
 <script src="chonmod.js"></script>
 <script src="check.js"></script>
 </body>
-<div class="credit">©datallain07 | Ver1.6.4</div><br>
+<div class="credit">©datallain07 | Ver1.6.5</div><br>
 </html>
