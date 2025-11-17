@@ -18,3 +18,12 @@ function getRGBColor(time) {
       element.classList.remove('rgb-glow');
     };
   }
+  
+const items = document.querySelectorAll('.menu-item');
+  let stopGlow = null;
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      if (stopGlow) stopGlow();
+      stopGlow = startRGBGlow(item);
+    });
+  });
