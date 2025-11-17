@@ -22,6 +22,9 @@ body.dark-mode .donate-message,
 body.dark-mode .menu-item .text small {
   color: #ccc !important;
 }
+body.dark-mode .menu-item .text small.small2 {
+  color: #fff !important;
+}
 body.dark-mode img[src*="icons/"]:not([src$="daticon.png"]) {
   filter: invert(1) hue-rotate(180deg);
 }
