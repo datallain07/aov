@@ -38,6 +38,7 @@ skins.forEach((skin) => {
               '${skin.champion}',
               '${skin.name}',
               '${skin.desc}',
+              '${skin.label}',   
               '${skin.Android}',
               '${skin.IOS}',
               'rgba(${skin.color}, 0.5)'
@@ -104,46 +105,64 @@ function collapseCard(card) {
   card.style.height = "60px";
 }
 
-function openDownloadPopup2(bgImg, miniImg, champion, name, desc, androidLink, iosLink, borderColor) {
+function openDownloadPopup2(bgImg, miniImg, champion, name, desc, label, androidLink, iosLink, borderColor) {
   const popup = document.getElementById("dlPopupX");
   const box = popup.querySelector(".dl-box");
-
   
   box.style.border = `2px solid ${borderColor}`;
   box.style.borderRadius = "12px";
-
-  const dlBg = document.getElementById("dlBgX");
-  dlBg.src = bgImg;
+  
+  document.getElementById("dlBgX").src = bgImg;
   document.getElementById("dlMiniX").src = miniImg;
-
+  document.getElementById("dlMiniX").style.borderColor = borderColor;
+  
   const oldSep = box.querySelector(".bg-separator");
   if (oldSep) oldSep.remove();
-
+  
   const separator = document.createElement("div");
   separator.className = "bg-separator";
-  separator.style.height = "2px"; 
+  separator.style.height = "2px";
   separator.style.width = "100%";
-  separator.style.background = borderColor; 
+  separator.style.background = borderColor;
   separator.style.margin = "0px 0";
+  
   const previewArea = box.querySelector(".preview-area");
   previewArea.insertAdjacentElement("afterend", separator);
-
+  
   const rgb = borderColor.replace("rgba(", "").replace(", 0.5)", "");
   const textColor = `rgb(${rgb})`;
+  
+
   const champElem = document.getElementById("dlChampX");
   champElem.innerText = champion || "";
   champElem.style.color = textColor;
+  
+  
   const nameElem = document.getElementById("dlNameX");
   nameElem.innerText = name || "";
   nameElem.style.background = `linear-gradient(to bottom, #fff, ${textColor})`;
   nameElem.style.webkitBackgroundClip = "text";
   nameElem.style.webkitTextFillColor = "transparent";
   nameElem.style.display = "inline-block";
+  
 
   document.getElementById("dlDescX").innerText = desc || "";
+  
 
-  document.getElementById("dlMiniX").style.borderColor = borderColor;
-
+  const labelElem = document.getElementById("dlLabelX");
+  if (label) {
+    labelElem.innerText = label;
+    labelElem.style.backgroundColor = textColor;
+    labelElem.style.color = "black";
+    labelElem.style.padding = "4px 8px";
+    labelElem.style.borderRadius = "6px";
+    labelElem.style.display = "inline-block";
+  } else {
+    labelElem.innerText = "";
+    labelElem.style.display = "none";
+  }
+  
+  
   const androidBtn = document.getElementById("dlAndroidX");
   const iosBtn = document.getElementById("dlIOSX");
   
@@ -156,8 +175,9 @@ function openDownloadPopup2(bgImg, miniImg, champion, name, desc, androidLink, i
     btn.style.textDecoration = "none";
     btn.style.display = "inline-block";
     btn.style.textAlign = "center";
-    btn.style.width = "auto"; 
+    btn.style.width = "auto";
   });
+  
   popup.classList.add("show");
   
   const maxWidth = Math.max(androidBtn.offsetWidth, iosBtn.offsetWidth);
@@ -166,12 +186,15 @@ function openDownloadPopup2(bgImg, miniImg, champion, name, desc, androidLink, i
   
   androidBtn.href = androidLink;
   iosBtn.href = iosLink;
-
+  
   popup.classList.add("show");
 }
 
 document.getElementById("dlPopupX").addEventListener("click", function(e) {
-  if (e.target === this) this.classList.remove("show");
+  if (e.target === this) {
+    document.getElementById("dlPopupX").classList.remove("show");
+    e.stopPropagation();
+  }
 });
 document.getElementById("dlAndroidX").addEventListener("click", () => {
   document.getElementById("dlPopupX").classList.remove("show");
@@ -179,17 +202,6 @@ document.getElementById("dlAndroidX").addEventListener("click", () => {
 document.getElementById("dlIOSX").addEventListener("click", () => {
   document.getElementById("dlPopupX").classList.remove("show");
 });
-
-document.getElementById("dlPopupX").addEventListener("click", function(e) {
-  if (e.target === this) this.classList.remove("show");
-});
-document.getElementById("dlAndroidX").addEventListener("click", () => {
-  document.getElementById("dlPopupX").classList.remove("show");
-});
-document.getElementById("dlIOSX").addEventListener("click", () => {
-  document.getElementById("dlPopupX").classList.remove("show");
-});
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const storedData = JSON.parse(localStorage.getItem("skinsList") || "[]");

@@ -612,7 +612,6 @@ input:checked + .slider::before {
   overflow-wrap: break-word;
 }
 
-/* Nút tải */
 .dl-buttons {
   margin-top: 15px;
   display: flex;
@@ -627,4 +626,16 @@ input:checked + .slider::before {
 }
 #dlAndroidX, #dlIOSX {
   text-decoration: none;
+}
+
+.dl-label {
+  position: absolute;
+  top: -105px;
+  left: 10px;
+  background: #00ffd0;
+  color: black;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: bold;
 }
