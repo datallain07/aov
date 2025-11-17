@@ -14,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     overlay.classList.remove('show');
   });
 
-  
-  const chonMod = document.getElementById("chonmod");
+const chonMod = document.getElementById("chonmod");
   const skinList = document.getElementById("skin-list");
   let isOpen = false;
 
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     isOpen = true;
   });
-
+  
   document.addEventListener("click", function(event) {
     const target = event.target;
     const isOutsideSkinList = !skinList.contains(target);
@@ -60,68 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
   skinList.addEventListener("click", function(event) {
     event.stopPropagation();
   });
-
  
-  const popup = document.getElementById("welcome-popup");
-  const closeBtn = document.getElementById("close-popup");
-  let canClose = false;
-
-  setTimeout(() => {
-    popup.style.display = "flex";
-    requestAnimationFrame(() => {
-      popup.classList.add("show");
-      popup.style.opacity = "1";
-    });
-
-    let countdown = 0;
-    closeBtn.disabled = true;
-    closeBtn.style.opacity = "0.5";
-    closeBtn.style.pointerEvents = "none";
-    closeBtn.style.cursor = "not-allowed";
-    //closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
-
-    const countdownInterval = setInterval(() => {
-      countdown--;
-      if (countdown > 0) {
-        closeBtn.textContent = `Có thể đóng sau ${countdown}s`;
-      } else {
-        clearInterval(countdownInterval);
-        canClose = true;
-        closeBtn.disabled = false;
-        closeBtn.textContent = "";
-        closeBtn.style.opacity = "1";
-        closeBtn.style.pointerEvents = "auto";
-        closeBtn.style.cursor = "pointer";
-      }
-    }, 1000);
-  }, 100);
-
-  function closePopup() {
-    if (!canClose) return;
-    popup.classList.remove("show");
-    popup.style.opacity = "0";
-
-    if (toggleMusic.checked) {
-      musicPlayer.play().catch(() => {
-        console.log('Autoplay bị chặn');
-      });
-    } else {
-      musicPlayer.pause();
-    }
-  }
-
-  popup.addEventListener("transitionend", function(e) {
-    if (e.propertyName === "opacity" && !popup.classList.contains("show")) {
-      popup.style.display = "none";
-    }
-  });
-
-  closeBtn.addEventListener("click", closePopup);
-  popup.addEventListener("click", function(e) {
-    if (e.target === popup && canClose) {
-      closePopup();
-    }
-  });
 
 
   const donateItem = document.querySelector('.menu-item:nth-child(1)');
@@ -233,27 +171,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-
-  function getRGBColor(time) {
-    const r = Math.floor(127 * Math.sin(0.03 * time + 0) + 128);
-    const g = Math.floor(127 * Math.sin(0.03 * time + 2) + 128);
-    const b = Math.floor(127 * Math.sin(0.03 * time + 4) + 128);
-    return `rgb(${r}, ${g}, ${b})`;
-  }
-
-  function startRGBGlow(element) {
-    let time = 0;
-    element.classList.add('rgb-glow');
-    const interval = setInterval(() => {
-      const color = getRGBColor(time);
-      element.style.setProperty('--rgb-color', color);
-      time++;
-    }, 50);
-    return () => {
-      clearInterval(interval);
-      element.classList.remove('rgb-glow');
-    };
-  }
 
   const items = document.querySelectorAll('.menu-item');
   let stopGlow = null;
