@@ -67,18 +67,30 @@ skins.forEach((skin) => {
   skinList.insertAdjacentHTML("beforeend", cardHTML);
 });
 
+let cardLocked = false;
+
 document.querySelectorAll(".mod-card").forEach(function(card) {
   card.addEventListener("click", function() {
-    if (document.body.classList.contains("no-animation")) return;
+    
+
+    if (cardLocked) return; 
+    cardLocked = true;
+    setTimeout(() => cardLocked = false, 500);
+    
     
     const isExpanded = card.classList.contains("expand");
-    if (isExpanded) return;
-    
+
+    if (isExpanded) {
+      collapseCard(card);
+      card.classList.remove("expand");
+      return;
+    }
+
     document.querySelectorAll(".mod-card.expand").forEach(function(c) {
       collapseCard(c);
       c.classList.remove("expand");
     });
-    
+
     expandCard(card);
     card.classList.add("expand");
   });
