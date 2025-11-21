@@ -1,5 +1,27 @@
 const skins = [
 {
+champion: "Florentino",
+name: "Furina",
+label: "Mới nhất, 21thg11",
+Android: "https://link4m.com/cbjkB",
+IOS: "https://link4m.com/Ss7QR",
+bgImg: "img/furina.png",
+miniImg: "img/furina_mini.png",
+desc: "Effects - Sound",
+color: "0, 180, 255",
+},
+{
+champion: "Amily",
+name: "Sparkle",
+label: "Mới nhất, 21thg11",
+Android: "https://link4m.com/MZqUu1D",
+IOS: "https://link4m.com/X7nB2D3n",
+bgImg: "img/sparkle.png",
+miniImg: "img/sparkle_mini.png",
+desc: "Effects - Sound",
+color: "255, 0, 90",
+},
+{
 champion: "Airi",
 name: "Skirk",
 label: "Mới nhất, 21thg11",
