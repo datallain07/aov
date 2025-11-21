@@ -18,7 +18,7 @@ Android: "https://link4m.com/cbjkB",
 IOS: "https://link4m.com/Ss7QR",
 bgImg: "img/furina.png",
 miniImg: "img/furina_mini.png",
-desc: "Effects - Sound",
+desc: "Effects - Sound - Button",
 color: "0, 180, 255",
 },
 {
