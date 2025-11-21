@@ -143,8 +143,13 @@ function openDownloadPopup2(bgImg, miniImg, champion, name, desc, label, android
   
   const rgb = borderColor.replace("rgba(", "").replace(", 0.5)", "");
   const textColor = `rgb(${rgb})`;
-  
 
+const dlTitle = document.getElementById("dlTitleX");
+const gradientTitle = `linear-gradient(45deg, #ffffff, ${textColor})`;
+
+dlTitle.style.background = gradientTitle;
+dlTitle.style.webkitBackgroundClip = "text";
+dlTitle.style.webkitTextFillColor = "transparent";
   const champElem = document.getElementById("dlChampX");
   champElem.innerText = champion || "";
   champElem.style.color = textColor;
