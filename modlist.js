@@ -7,7 +7,7 @@ Android: "https://link4m.com/mkFQFP",
 IOS: "https://link4m.com/Z6a7Fi3",
 bgImg: "img/xiao.png",
 miniImg: "img/xiao_mini.png",
-desc: "Effects - Sound",
+desc: "Effects - Sound - Button",
 color: "0, 255, 222",
 },
 {
