@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Nakroth",
+name: "Xiao",
+label: "Mới nhất, 22thg11",
+Android: "https://link4m.com/mkFQFP",
+IOS: "https://link4m.com/Z6a7Fi3",
+bgImg: "img/xiao.png",
+miniImg: "img/xiao_mini.png",
+desc: "Effects - Sound",
+color: "0, 255, 222",
+},
+{
 champion: "Florentino",
 name: "Wave",
 label: "Mới nhất, 22thg11",
