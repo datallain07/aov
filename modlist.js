@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Triệu Vân",
+name: "Dan Heng • Permansor Terrea",
+label: "Mới nhất, 25thg11",
+Android: "https://link4m.com/T7piA",
+IOS: "https://link4m.com/T9IdnHFn",
+bgImg: "img/danhengpt.png",
+miniImg: "img/danhengpt_mini.png",
+desc: "Effects - Sound - Button - Notify",
+color: "238, 206, 137",
+},
+{
 champion: "Biron",
 name: "Mydei",
 label: "Mới nhất, 25thg11",
