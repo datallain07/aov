@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Volkath",
+name: "Mavuika",
+label: "Mới nhất, 29thg11",
+Android: "https://link4m.com/JFUahDa",                                IOS: "https://link4m.com/040nQYxf",
+bgImg: "img/mavuika.png",
+miniImg: "img/mavuika_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 150, 50",
+},
+{
 champion: "Triệu Vân",
 name: "Dan Heng • Permansor Terrea",
 label: "Mới nhất, 25thg11",
