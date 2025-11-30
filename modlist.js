@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Thorne",
+name: "Thứ nguyên vệ thần",
+label: "Mới nhất, 30thg11",
+Android: "https://link4m.com/VzMJV0",                                 IOS: "https://link4m.com/9ZqagsG3",
+bgImg: "img/13314.jpg",
+miniImg: "img/13314head.jpg",
+desc: "Effects - Sound - Button",
+color: "120, 120, 255",
+},
+{
 champion: "Volkath",
 name: "Mavuika",
 label: "Mới nhất, 29thg11",
