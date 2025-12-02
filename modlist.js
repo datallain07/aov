@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Butterfly",
+name: "Castorice",
+label: "Mới nhất, 2thg12",
+Android: "https://link4m.com/Od8rrS",                                 IOS: "https://link4m.com/YR791drg",
+bgImg: "img/castorice.png",
+miniImg: "img/castorice_mini.png",
+desc: "Effects - Sound - Button",
+color: "200, 150, 255",
+},
+{
 champion: "Thorne",
 name: "Thứ nguyên vệ thần",
 label: "Mới nhất, 30thg11",
