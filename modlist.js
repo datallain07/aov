@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Bright",
+name: "Kaslana",
+label: "Mới nhất, tải lên ngày 6thg12",
+Android: "https://link4m.com/lRR4i",                                  IOS: "https://link4m.com/jcMA4x",
+bgImg: "img/kaslana.png",
+miniImg: "img/kaslana_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 220, 75",
+},
+{
 champion: "Butterfly",
 name: "Cartethyia",
 label: "Mới nhất, tải lên ngày 5thg12",
