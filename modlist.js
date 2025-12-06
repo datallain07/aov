@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Biron",
+name: "Mydei",
+label: "Mới nhất, tải lên ngày 6thg12",
+Android: "https://link4m.com/egntPRE",
+IOS: "https://link4m.com/68fJlkHC",
+bgImg: "img/mydei.png",
+miniImg: "img/mydei_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 100, 100",
+},
+{
 champion: "Bright",
 name: "Kaslana",
 label: "Mới nhất, tải lên ngày 6thg12",
