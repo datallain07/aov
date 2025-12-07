@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Volkath",
+name: "Mavuika",
+label: "Mới nhất, tải lên ngày 7thg12",
+Android: "https://link4m.com/rFsPRk",                                 IOS: "https://link4m.com/TKy2d",
+bgImg: "img/mavuika.png",
+miniImg: "img/mavuika_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 150, 100",
+},
+{
 champion: "Biron",
 name: "Mydei",
 label: "Mới nhất, tải lên ngày 6thg12",
