@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Butterfly",
+name: "Changli",
+label: "Mới nhất, tải lên ngày 13thg12",
+Android: "https://link4m.com/BHXtUc",                                 IOS: "https://link4m.com/rfeXkn",
+bgImg: "img/changli.png",
+miniImg: "img/changli_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 159, 140",
+},
+{
 champion: "Allain",
 name: "Firefly",
 label: "Mới nhất, tải lên ngày 12thg12",
