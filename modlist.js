@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Airi",
+name: "Skirk",
+label: "Mới nhất, tải lên ngày 15thg12",
+Android: "https://link4m.com/jHwWrv",                                 IOS: "https://link4m.com/e23bFyN",
+bgImg: "img/skirk.png",
+miniImg: "img/skirk_mini.png",
+desc: "Effects - Sound - Button",
+color: "222, 222, 255",
+},
+{
 champion: "Butterfly",
 name: "Changli",
 label: "Mới nhất, tải lên ngày 13thg12",
