@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Florentino",
+name: "Furina",
+label: "#Genshin Impact | 23thg12",
+Android: "https://link4m.com/vyGB3tr",                                IOS: "https://link4m.com/Qv5lDyb",
+bgImg: "img/furina.png",
+miniImg: "img/furina_mini.png",
+desc: "Effects - Sound - Button",
+color: "60, 160, 255",
+},
+{
 champion: "Airi",
 name: "Skirk",
 label: "#Genshin Impact | 23thg12",
