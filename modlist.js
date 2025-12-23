@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Airi",
+name: "Skirk",
+label: "#Genshin Impact | 23thg12",
+Android: "https://link4m.com/yfzVxh",                                 IOS: "https://link4m.com/qEraXj",
+bgImg: "img/skirk.png",
+miniImg: "img/skirk_mini.png",
+desc: "Effects - Sound - Button",
+color: "222, 222, 255",
+},
+{
 champion: "Wiro",
 name: "Mặc định",
 label: "Cài 1 lần, dùng đến khi game sập",
