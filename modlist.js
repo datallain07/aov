@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Volkath",
+name: "Mavuika",
+label: "#Genshin Impact | 23thg12",
+Android: "https://link4m.com/hgTi7mI",                                IOS: "https://link4m.com/2ln7LN",
+bgImg: "img/mavuika.png",
+miniImg: "img/mavuika_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 150, 100",
+},
+{
 champion: "Biron",
 name: "Mydei",
 label: "#Honkai: Star Rail | 23thg12",
