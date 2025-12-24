@@ -1,5 +1,25 @@
 const skins = [
 {
+champion: "Triệu Vân",
+name: "DanHeng PT",
+label: "#Honkai: Star Rail | 24thg12",
+Android: "https://link4m.com/qW0Xm9D",                                IOS: "https://link4m.com/UJb54v",
+bgImg: "img/danhengpt.png",
+miniImg: "img/danhengpt_mini.png",
+desc: "Effects - Sound - Button - Notify",
+color: "255, 200, 120",
+},
+{
+champion: "Butterfly",
+name: "Changli",
+label: "#Wuthering Waves | 24thg12",
+Android: "https://link4m.com/TNHT99",                                 IOS: "https://link4m.com/MD3LSye",
+bgImg: "img/changli.png",
+miniImg: "img/changli_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 190, 150",
+},
+{
 champion: "Volkath",
 name: "Mavuika",
 label: "#Genshin Impact | 23thg12",
