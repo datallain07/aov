@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Butterfly",
+name: "Cartethyia",
+label: "#Wuthering Waves | 26thg12",
+Android: "https://link4m.com/HxkBBqf",                                IOS: "https://link4m.com/GpJ6R2",
+bgImg: "img/cartethyia.png",
+miniImg: "img/cartethyia_head.png",
+desc: "Effects - Sound - Button",
+color: "100, 180, 225",
+},
+{
 champion: "Nakroth",
 name: "Xiao",
 label: "#Genshin Impact | 25thg12",
