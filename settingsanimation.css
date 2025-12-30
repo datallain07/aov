@@ -1,0 +1,13 @@
+.no-animation *, .no-animation *::before, .no-animation *::after {
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
+.no-animation .rgb-glow {
+  border: 1.5px solid #000 !important; 
+  border-color: #000000 !important;
+  box-shadow: none !important;
+}
+.no-animation {
+  --rgb-color: #00000;
+}

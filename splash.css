@@ -1,0 +1,94 @@
+#search {
+  background: #dddddd;
+  display: block;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 94%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#search::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.dat2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.dat2-item {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease, grid-column 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.dat2-item.active {
+  grid-column: 1 / -1;
+}
+
+.dat2-header {
+  display: flex;
+  align-items: center;
+}
+
+.dat2-item img.thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.dat2-item .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dat2-item .text strong {
+  font-size: 16px;
+  color: #000;
+}
+
+.dat2-item .text small {
+  color: #666;
+  font-size: 13px;
+}
+
+.splash-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.dat2-item.active .splash-container {
+  max-height: 9999px;
+  padding: 1px 0;
+}
+.splash-container img {
+  max-width: 99%;
+  width: 110px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.hidden {
+  display: none;
+}
+#splash-container {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}

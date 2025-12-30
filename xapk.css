@@ -1,0 +1,48 @@
+.menu3-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.menu3-list.show {
+  margin-top: 10px;
+  max-height: 1000px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu3-item {
+  flex: 1 1 calc(50% - 10px);
+  box-sizing: border-box;
+  min-width: 250px;
+  max-width: 100%;
+  display: flex;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  position: relative;
+}
+.menu3-item .text strong {
+  font-size: 16px;
+}
+.menu3-item .text small {
+  color: #666;
+  font-size: 13px;
+}
+.menu3-item .label-top-right {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #333;
+  pointer-events: none;
+}
