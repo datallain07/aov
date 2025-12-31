@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Richter",
+name: "Eugeo",
+label: "#SAO: Alicization | 1thg1",
+Android: "https://link4m.com/i8lFN9qD",                               IOS: "https://link4m.com/1HdnsST",
+bgImg: "img/eugeo.png",
+miniImg: "img/eugeo_mini.png",
+videoPreview: "video/eugeo.mp4",
+desc: "Effects - Sound",
+color: "100, 225, 255",
+},
+{
 champion: "Amily",
 name: "Sparkle",
 label: "#Honkai: Star Rail | 31thg12",
