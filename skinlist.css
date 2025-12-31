@@ -76,14 +76,19 @@
 }
 .label {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  inset: 10px auto auto 10px;
   background: #00ffd0;
-  color: black;
+  color: #000;
   font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
   padding: 2px 8px;
   border-radius: 5px;
-  font-weight: bold;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
 }
 .download-container {
   position: absolute;

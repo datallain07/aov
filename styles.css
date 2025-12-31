@@ -564,7 +564,6 @@ input:checked + .slider::before {
   width: 100%;
 }
 
-/* layer video preview */
 .preview-video {
   position: absolute;
   top: 0;
@@ -652,8 +651,8 @@ input:checked + .slider::before {
 }
 
 .dl-label {
-  position: absolute;
-  top: -105px;
+  position: fixed;
+  top: 10px;
   left: 10px;
   background: #00ffd0;
   color: black;
