@@ -19,7 +19,7 @@ bgImg: "img/blade.png",
 miniImg: "img/blade_mini.png",
 videoPreview: "video/blade.mp4",
 desc: "Effects - Sound - Button",
-color: "60, 255, 180",
+color: "255, 70, 70",
 },
 {
 champion: "Allain",
