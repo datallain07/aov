@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Amily",
+name: "Sparkle",
+label: "#Honkai: Star Rail | 31thg12",
+Android: "https://link4m.com/jWei0TtL",                               IOS: "https://link4m.com/FJL9Hx",
+bgImg: "img/sparkle.png",
+miniImg: "img/sparkle_mini.png",
+videoPreview: "video/sparkle.mp4",
+desc: "Effects - Sound",
+color: "225, 25, 100",
+},
+{
 champion: "Butterfly",
 name: "Castorice",
 label: "#Honkai: Star Rail | 29thg12",
