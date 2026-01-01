@@ -3,7 +3,7 @@ const skins = [
 champion: "Richter",
 name: "Eugeo",
 label: "#SAO: Alicization | 1thg1",
-Android: "https://link4m.com/i8lFN9qD",                               IOS: "https://link4m.com/1HdnsST",
+Android: "https://link4m.com/nw7nBEa",                                IOS: "https://link4m.com/O1Iun9dz",
 bgImg: "img/eugeo.png",
 miniImg: "img/eugeo_mini.png",
 videoPreview: "video/eugeo.mp4",
