@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Lạc Tuyết Bạch Lang",
+label: "#Honor of King | 3thg1",
+Android: "https://link4m.com/aV5Wp",                                  IOS: "https://link4m.com/388Gk",
+bgImg: "img/53703v2.png",
+miniImg: "img/53703v2_mini.png",
+videoPreview: "video/53703v2.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "150, 222, 255",
+},
+{
 champion: "Richter",
 name: "Eugeo",
 label: "#SAO: Alicization | 1thg1",
