@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Violet",
+name: "Carlotta",
+label: "#Wuthering Waves | 5thg1",
+Android: "https://link4m.com/FaoKfA5",                                IOS: "https://link4m.com/K5esN8",
+bgImg: "img/carlotta.png",
+miniImg: "img/carlotta_mini.png",
+videoPreview: "video/carlotta.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 100, 160",
+},
+{
 champion: "Mina",
 name: "Arlecchino",
 label: "#Genshin Impact | 4thg1",
