@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Mina",
+name: "Arlecchino",
+label: "#Genshin Impact | 4thg1",
+Android: "https://link4m.com/lqBu2",                                  IOS: "https://link4m.com/4RKK5",
+bgImg: "img/arlecchino.png",
+miniImg: "img/arlecchino_mini.png",
+videoPreview: "video/arlecchino.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 100, 100",
+},
+{
 champion: "Allain",
 name: "Lạc Tuyết Bạch Lang",
 label: "#Honor of King | 3thg1",
