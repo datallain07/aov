@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Tachi",
+name: "Acheron",
+label: "#Honkai: Star Rail | 9thg1",
+Android: "https://link4m.com/lLh2D0",                                 IOS: "https://link4m.com/NRDWW",
+bgImg: "img/acheron.png",
+miniImg: "img/acheron_mini.png",
+videoPreview: "video/acheron.mp4",
+desc: "Effects - Sound - Button",
+color: "145, 130, 225",
+},
+{
 champion: "Tulen",
 name: "DanHeng IL",
 label: "#Honkai: Star Rail | 6thg1",
