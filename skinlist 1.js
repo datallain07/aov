@@ -1,5 +1,5 @@
 const skinList = document.getElementById("skin-list");
-skinList.querySelectorAll(".mod-card").forEach(e => e.remove());
+
 skins.forEach((skin) => {
   const rgb = skin.color;
   const textColor = `rgb(${rgb})`;
@@ -289,4 +289,3 @@ if (videoToggle) {
     }
   });
 }
-
