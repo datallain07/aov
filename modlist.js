@@ -1,5 +1,15 @@
 const skins = [
-
+{
+champion: "Raz",
+name: "Wriothesley",
+label: "#Genshin Impact | 9thg1",
+Android: "https://link4m.com/dcqxcAC",                                IOS: "https://link4m.com/HLv466B3",
+bgImg: "img/wriothesley.png",
+miniImg: "img/wriothesley_mini.png",
+videoPreview: "video/wriothesley.mp4",
+desc: "Effects - Sound - Button",
+color: "150, 200, 225",
+},
 {
 champion: "Tachi",
 name: "Acheron",
