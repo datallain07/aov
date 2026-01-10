@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Taara",
+name: "Herta",
+label: "#Honkai: Star Rail | 10thg1",
+Android: "https://link4m.com/2i7XLy",                                 IOS: "https://link4m.com/86IzFK",
+bgImg: "img/herta.png",
+miniImg: "img/herta_mini.png",
+videoPreview: "video/herta.mp4",
+desc: "Effects - Sound - Button",
+color: "170, 120, 225",
+},
+{
 champion: "Raz",
 name: "Wriothesley",
 label: "#Genshin Impact | 9thg1",
