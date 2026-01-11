@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Hayate",
+name: "Chiến thần MOBA",
+label: "#Honor of King | 11thg1",
+Android: "https://link4m.com/6JGEbh",                                 IOS: "https://link4m.com/VpRat",
+bgImg: "img/CTMoba.png",
+miniImg: "img/CTMoba_Mini.png",
+videoPreview: "video/CTMobs.mp4",
+desc: "Effects - Sound - Button",
+color: "100, 150, 225",
+},
+{
 champion: "Taara",
 name: "Herta",
 label: "#Honkai: Star Rail | 10thg1",
