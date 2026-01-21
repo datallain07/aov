@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Lauriel",
+name: "Columbina",
+label: "#Genshin Impact | 21thg1",
+Android: "https://link4m.com/ssiEuKh5",                               IOS: "https://link4m.com/M1svxk",
+bgImg: "img/columbina.png",
+miniImg: "img/columbina_mini.png",
+videoPreview: "video/columbina.mp4",
+desc: "Effects - Sound - Button",
+color: "107, 222, 255",
+},
+{
 champion: "Wiro",
 name: "Mặc định",
 label: "Cài 1 lần, dùng đến khi game sập",
