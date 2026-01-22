@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Firefly",
+label: "#Honkai: Star Rail | 22thg1",
+Android: "https://link4m.com/N8giVuOq",                               IOS: "https://link4m.com/7MgATz",
+bgImg: "img/firefly.png",
+miniImg: "img/firefly_mini.png",
+videoPreview: "video/firefly.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "80, 255, 200",
+},
+{
 champion: "Lauriel",
 name: "Columbina",
 label: "#Genshin Impact | 21thg1",
