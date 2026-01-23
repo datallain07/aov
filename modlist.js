@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Butterfly",
+name: "Cartethyia",
+label: "#Wuthering Waves| 23thg1",
+Android: "https://link4m.com/umkkg",                                  IOS: "https://link4m.com/a5ZkdiWO",
+bgImg: "img/cartethyia.png",
+miniImg: "img/cartethyia_head.png",
+videoPreview: "video/cartethyia.mp4",
+desc: "Effects - Sound - Button",
+color: "80, 190, 255",
+},
+{
 champion: "Allain",
 name: "Feixiao",
 label: "#Honkai: Star Rail | 23thg1",
