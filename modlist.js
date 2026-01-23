@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Airi",
+name: "Skirk",
+label: "#Genshin Impact | 23thg1",
+Android: "https://link4m.com/LYBBbCj",                                IOS: "https://link4m.com/KHgyAzp",
+bgImg: "img/skirk.png",
+miniImg: "img/skirk_mini.png",
+desc: "Effects - Sound - Button",
+color: "180, 200, 255",
+},
+{
 champion: "Allain",
 name: "Firefly",
 label: "#Honkai: Star Rail | 22thg1",
