@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Lạc Tuyết Bạch Lang",
+label: "#Honor of King| 24thg1",
+Android: "https://link4m.com/uSICl",                                  IOS: "https://link4m.com/Qjl6Hi",
+bgImg: "img/53703v2.png",
+miniImg: "img/53703v2_mini.png",
+videoPreview: "video/53703v2.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "130, 230, 255",
+},
+{
 champion: "Butterfly",
 name: "Cartethyia",
 label: "#Wuthering Waves| 23thg1",
