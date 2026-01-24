@@ -1,8 +1,18 @@
 const skins = [
 {
+champion: "Butterfly",
+name: "Castorice",
+label: "#Honkai: Star Rail | 25thg1",
+Android: "https://link4m.com/Ovydd",                                  IOS: "https://link4m.com/GogulGdF",
+bgImg: "img/castorice.png",
+miniImg: "img/castorice_mini.png",
+desc: "Effects - Sound - Button",
+color: "230, 170, 255",
+},
+{
 champion: "Allain",
 name: "Lạc Tuyết Bạch Lang",
-label: "#Honor of King| 24thg1",
+label: "#Honor of King | 24thg1",
 Android: "https://link4m.com/uSICl",                                  IOS: "https://link4m.com/Qjl6Hi",
 bgImg: "img/53703v2.png",
 miniImg: "img/53703v2_mini.png",
@@ -13,7 +23,7 @@ color: "130, 230, 255",
 {
 champion: "Butterfly",
 name: "Cartethyia",
-label: "#Wuthering Waves| 23thg1",
+label: "#Wuthering Waves | 23thg1",
 Android: "https://link4m.com/umkkg",                                  IOS: "https://link4m.com/a5ZkdiWO",
 bgImg: "img/cartethyia.png",
 miniImg: "img/cartethyia_head.png",
