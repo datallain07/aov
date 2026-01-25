@@ -1,6 +1,16 @@
 const skins = [
 {
 champion: "Butterfly",
+name: "Changli",
+label: "#Wuthering Waves | 25thg1",
+Android: "https://link4m.com/SlIAmr",                                 IOS: "https://link4m.com/dzMvk",
+bgImg: "img/changli.png",
+miniImg: "img/changli_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 190, 180",
+},
+{
+champion: "Butterfly",
 name: "Castorice",
 label: "#Honkai: Star Rail | 25thg1",
 Android: "https://link4m.com/Ovydd",                                  IOS: "https://link4m.com/GogulGdF",
