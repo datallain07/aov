@@ -1,6 +1,16 @@
 const skins = [
 {
 champion: "Butterfly",
+name: "3In1",
+label: "#3in1 NoDuplicate | 27thg1",
+Android: "https://link4m.com/8PkIg",                                  IOS: "https://link4m.com/HZGm3eR",
+bgImg: "img/but3in1.png",
+miniImg: "img/but3in1_mini.png",
+desc: "Effects - Sound - No Duplicate",
+color: "255, 150, 80",
+},
+{
+champion: "Butterfly",
 name: "Changli",
 label: "#Wuthering Waves | 25thg1",
 Android: "https://link4m.com/SlIAmr",                                 IOS: "https://link4m.com/dzMvk",
