@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Nakroth",
+name: "Xiao",
+label: "#Genshin Impact | 31thg1",
+Android: "https://link4m.com/w2ArQ0P",                                IOS: "https://link4m.com/gcHr2O7w",
+bgImg: "img/xiao.png",
+miniImg: "img/xiao_mini.png",
+desc: "Effects - Sound - Button",
+color: "0, 255, 225",
+},
+{
 champion: "Florentino",
 name: "Furina",
 label: "#Genshin Impact | 31thg1",
