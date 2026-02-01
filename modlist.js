@@ -1,8 +1,18 @@
 const skins = [
 {
+champion: "Volkath",
+name: "Mavuika",
+label: "#Genshin Impact | 2thg2",
+Android: "https://link4m.com/WBZaD",                                  IOS: "https://link4m.com/dGs1p",
+bgImg: "img/mavuika.png",
+miniImg: "img/mavuika_mini.png",
+desc: "Effects - Sound - Button",
+color: "255, 140, 70",
+},
+{
 champion: "Tachi",
 name: "Acheron",
-label: "#Genshin Impact | 1thg2",
+label: "#Honkai: Star Rail | 1thg2",
 Android: "https://link4m.com/8jz4L",                                  IOS: "https://link4m.com/iLmmapV",
 bgImg: "img/acheron.png",
 miniImg: "img/acheron_mini.png",
