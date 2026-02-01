@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Tachi",
+name: "Acheron",
+label: "#Genshin Impact | 1thg2",
+Android: "https://link4m.com/8jz4L",                                  IOS: "https://link4m.com/iLmmapV",
+bgImg: "img/acheron.png",
+miniImg: "img/acheron_mini.png",
+desc: "Effects - Sound - Button",
+color: "190, 100, 255",
+},
+{
 champion: "Nakroth",
 name: "Xiao",
 label: "#Genshin Impact | 31thg1",
