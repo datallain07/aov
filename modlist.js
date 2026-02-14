@@ -1,5 +1,15 @@
 const skins = [
 {
+champion: "Thorne",
+name: "Dimension Breaker",
+label: "#Arena of Valor | 15thg2",
+Android: "https://link4m.com/rkXGFTW",                                IOS: "https://link4m.com/usXdT1",
+bgImg: "img/13314.jpg",
+miniImg: "img/3013314head.jpg",
+desc: "Effects - Sound - Button",
+color: "100, 150, 255",
+},
+{
 champion: "Butterfly",
 name: "3IN1",
 label: "#Noduplicate | 15thg2",
