@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Firefly",
+label: "#Honkai:Star Rail | 15thg2",
+Android: "https://link4m.com/5FUaXmoG",                               IOS: "https://link4m.com/naCHa6",
+bgImg: "img/firefly.png",
+miniImg: "img/firefly_mini.png",
+videoPreview: "video/firefly.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "80, 255, 180",
+},
+{
 champion: "Thorne",
 name: "Dimension Breaker",
 label: "#Arena of Valor | 15thg2",
