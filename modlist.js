@@ -12,7 +12,7 @@ color: "100, 150, 255",
 {
 champion: "Butterfly",
 name: "3IN1",
-label: "#Noduplicate | 15thg2",
+label: "#No Duplicate | 15thg2",
 Android: "https://link4m.com/hmB9fn",                                 IOS: "https://link4m.com/5tp9t",
 bgImg: "img/but3in1.png",
 miniImg: "img/but3in1_mini.png",
