@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Richter",
+name: "Eugeo",
+label: "#Underworld | 15thg2",
+Android: "https://link4m.com/oZbId9n",                                IOS: "https://link4m.com/aSgMZ10G",
+bgImg: "img/eugeo.png",
+miniImg: "img/eugeo_mini.png",
+videoPreview: "video/eugeo.mp4",
+desc: "Effects - Sound - Button",
+color: "150, 225, 255",
+},
+{
 champion: "Raz",
 name: "Wriothesley",
 label: "#Genshin Impact | 15thg2",
