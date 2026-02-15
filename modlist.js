@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Florentino",
+name: "Blade",
+label: "#Honkai:Star Rail | 15thg2",
+Android: "https://link4m.com/bAcI1",                                  IOS: "https://link4m.com/5Mqdwoi",
+bgImg: "img/blade.png",
+miniImg: "img/blade_mini.png",
+videoPreview: "video/blade.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 0, 0",
+},
+{
 champion: "Allain",
 name: "Firefly",
 label: "#Honkai:Star Rail | 15thg2",
