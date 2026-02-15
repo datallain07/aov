@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Triệu Vân",
+name: "DanHeng PT",
+label: "#Honkai: Star Rail | 15thg2",
+Android: "https://link4m.com/e8YSUVAu",                               IOS: "https://link4m.com/QVN8vwv",
+bgImg: "img/danhengpt.png",
+miniImg: "img/danhengpt_mini.png",
+videoPreview: "video/danhengpt.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "255, 200, 120",
+},
+{
 champion: "Richter",
 name: "Eugeo",
 label: "#Underworld | 15thg2",
