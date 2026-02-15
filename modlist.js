@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Raz",
+name: "Wriothesley",
+label: "#Genshin Impact | 15thg2",
+Android: "https://link4m.com/6YZfdY",                                 IOS: "https://link4m.com/bUW2kT",
+bgImg: "img/wriothesley.png",
+miniImg: "img/wriothesley_mini.png",
+videoPreview: "video/wriothesley.mp4",
+desc: "Effects - Sound - Button",
+color: "150, 225, 255",
+},
+{
 champion: "Biron",
 name: "Mydei",
 label: "#Honkai:Star Rail | 15thg2",
