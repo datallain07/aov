@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Volkath",
+name: "Mavuika",
+label: "#Genshin Impact | 15thg2",
+Android: "https://link4m.com/Mhz7AMX",                                IOS: "https://link4m.com/2we9C4",
+bgImg: "img/mavuika.png",
+miniImg: "img/mavuika_mini.png",
+videoPreview: "video/mavuika.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 150, 70",
+},
+{
 champion: "Triệu Vân",
 name: "DanHeng PT",
 label: "#Honkai: Star Rail | 15thg2",
