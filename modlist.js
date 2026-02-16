@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Hayate",
+name: "CHIẾN THẦN MOBA",
+label: "#Arena of Valor | 17thg2",
+Android: "https://link4m.com/ENtABr",                                 IOS: "https://link4m.com/P5zsZ0g",
+bgImg: "img/CTMoba.png",
+miniImg: "img/3053308head.jpg",
+videoPreview: "video/53308.mp4",
+desc: "Effects - Sound - Button",
+color: "70, 160, 255",
+},
+{
 champion: "Violet",
 name: "Carlotta",
 label: "#Wuthering Waves | 16thg2",
