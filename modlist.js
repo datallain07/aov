@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Nakroth",
+name: "Xiao",
+label: "#Genshin Impact | 16thg2",
+Android: "https://link4m.com/8CFH6JyE",                               IOS: "https://link4m.com/VqDLonNR",
+bgImg: "img/xiao.png",
+miniImg: "img/xiao_mini.png",
+videoPreview: "video/xiao.mp4",
+desc: "Effects - Sound - Button",
+color: "70, 255, 225",
+},
+{
 champion: "Volkath",
 name: "Mavuika",
 label: "#Genshin Impact | 15thg2",
