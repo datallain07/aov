@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Violet",
+name: "Carlotta",
+label: "#Wuthering Waves | 16thg2",
+Android: "https://link4m.com/CBlZS62",                                IOS: "https://link4m.com/lGTIYFxK",
+bgImg: "img/carlotta.png",
+miniImg: "img/carlotta_mini.png",
+videoPreview: "video/carlotta.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 150, 170",
+},
+{
 champion: "Tulen",
 name: "DanHeng IL",
 label: "#Honkai: Star Rail | 16thg2",
