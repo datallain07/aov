@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Bright",
+name: "Kaslana",
+label: "#Honkai: Star Rail | 16thg2",
+Android: "https://link4m.com/8YwyI",                                  IOS: "https://link4m.com/pJgGBh",
+bgImg: "img/kaslana.png",
+miniImg: "img/kaslana_mini.png",
+videoPreview: "video/kaslana.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 200, 50",
+},
+{
 champion: "Lauriel",
 name: "Columbina",
 label: "#Genshin Impact | 16thg2",
