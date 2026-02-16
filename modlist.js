@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Tulen",
+name: "DanHeng IL",
+label: "#Honkai: Star Rail | 16thg2",
+Android: "https://link4m.com/28qBScp",                                IOS: "https://link4m.com/gvOePrr",
+bgImg: "img/danheng.png",
+miniImg: "img/danheng_mini.png",
+videoPreview: "video/danheng.mp4",
+desc: "Effects - Sound",
+color: "70, 255, 225",
+},
+{
 champion: "Bright",
 name: "Kaslana",
 label: "#Honkai: Star Rail | 16thg2",
