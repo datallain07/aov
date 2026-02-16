@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Florentino",
+name: "Wave",
+label: "#Arena of Valor | 16thg2",
+Android: "https://link4m.com/jv6vB4",                                 IOS: "https://link4m.com/eJ5gY",
+bgImg: "img/53503.jpg",
+miniImg: "img/305353head.jpg",
+videoPreview: "video/53503.mp4",
+desc: "Effects - Sound - Button",
+color: "225, 170, 255",
+},
+{
 champion: "Nakroth",
 name: "Xiao",
 label: "#Genshin Impact | 16thg2",
