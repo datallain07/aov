@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Lauriel",
+name: "Columbina",
+label: "#Genshin Impact | 16thg2",
+Android: "https://link4m.com/fv5PS",                                  IOS: "https://link4m.com/J28je",
+bgImg: "img/columbina.png",
+miniImg: "img/columbina_mini.png",
+videoPreview: "video/columbina.mp4",
+desc: "Effects - Sound - Button",
+color: "190, 225, 255",
+},
+{
 champion: "Florentino",
 name: "Wave",
 label: "#Arena of Valor | 16thg2",
