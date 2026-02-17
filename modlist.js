@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Lạc Tuyết Bạch Lang",
+label: "#Arena of Valor | 17thg2",
+Android: "https://link4m.com/apMTbj9",                                IOS: "https://link4m.com/PNdRCy",
+bgImg: "img/53703v2.png",
+miniImg: "img/53703v2_mini.png",
+videoPreview: "video/53703.mp4",
+desc: "Effects - Sound - Button - Notify",
+color: "130, 225, 255",
+},
+{
 champion: "Hayate",
 name: "CHIẾN THẦN MOBA",
 label: "#Arena of Valor | 17thg2",
