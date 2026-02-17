@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Allain",
+name: "Feixiao",
+label: "#Honkai: Star Rail | 17thg2",
+Android: "https://link4m.com/Hmhc2mt",                                IOS: "https://link4m.com/rzvkvnB",
+bgImg: "img/feixiao.png",
+miniImg: "img/feixiao_mini.png",
+videoPreview: "video/feixiao.mp4",
+desc: "Effects - Sound - Button",
+color: "60, 255, 225",
+},
+{
 champion: "Tachi",
 name: "Acheron",
 label: "#Honkai: Star Rail | 17thg2",
