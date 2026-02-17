@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Tachi",
+name: "Acheron",
+label: "#Honkai: Star Rail | 17thg2",
+Android: "https://link4m.com/TQ0FedD",                                IOS: "https://link4m.com/DtVSbq",
+bgImg: "img/acheron.png",
+miniImg: "img/acheron_mini.png",
+videoPreview: "video/acheron.mp4",
+desc: "Effects - Sound - Button",
+color: "180, 140, 255",
+},
+{
 champion: "Allain",
 name: "Lạc Tuyết Bạch Lang",
 label: "#Arena of Valor | 17thg2",
