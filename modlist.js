@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Mina",
+name: "Arlecchino",
+label: "#Genshin Impact | 18thg2",
+Android: "https://link4m.com/jPJbwPwI",                               IOS: "https://link4m.com/Iiu2nr",
+bgImg: "img/arlecchino.png",
+miniImg: "img/arlecchino_mini.png",
+videoPreview: "video/arlecchino.mp4",
+desc: "Effects - Sound - Button",
+color: "255, 60, 60",
+},
+{
 champion: "Allain",
 name: "Feixiao",
 label: "#Honkai: Star Rail | 17thg2",
@@ -7,7 +18,7 @@ Android: "https://link4m.com/Hmhc2mt",                                IOS: "http
 bgImg: "img/feixiao.png",
 miniImg: "img/feixiao_mini.png",
 videoPreview: "video/feixiao.mp4",
-desc: "Effects - Sound - Button",
+desc: "Effects - Sound - Button - Notify",
 color: "60, 255, 225",
 },
 {
