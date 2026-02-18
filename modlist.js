@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Airi",
+name: "Skirk",
+label: "#Genshin Impact | 18thg2",
+Android: "https://link4m.com/qdSBa",                                  IOS: "https://link4m.com/NterM",
+bgImg: "img/skirk.png",
+miniImg: "img/skirk_mini.png",
+videoPreview: "video/skirk.mp4",
+desc: "Effects - Sound - Button",
+color: "200, 200, 255",
+},
+{
 champion: "Mina",
 name: "Arlecchino",
 label: "#Genshin Impact | 18thg2",
