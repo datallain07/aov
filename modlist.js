@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Amily",
+name: "Sparkle",
+label: "#Honkai: Star Rail | 19thg2",
+Android: "https://link4m.com/0BlRD",                                  IOS: "https://link4m.com/riukya3H",
+bgImg: "img/sparkle.png",
+miniImg: "img/sparkle_mini.png",
+videoPreview: "video/sparkle.mp4",
+desc: "Effects - Sound",
+color: "255, 50, 130",
+},
+{
 champion: "Taara",
 name: "Herta",
 label: "#Genshin Impact | 18thg2",
