@@ -1,5 +1,16 @@
 const skins = [
 {
+champion: "Taara",
+name: "Herta",
+label: "#Genshin Impact | 18thg2",
+Android: "https://link4m.com/rjZxkOt",                                IOS: "https://link4m.com/o2gxJdr9",
+bgImg: "img/herta.png",
+miniImg: "img/herta_mini.png",
+videoPreview: "video/herta.mp4",
+desc: "Effects - Sound - Button",
+color: "200, 150, 255",
+},
+{
 champion: "Airi",
 name: "Skirk",
 label: "#Genshin Impact | 18thg2",
