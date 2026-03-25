@@ -80,3 +80,17 @@ body.dark-mode {
   --bg-color: #111;
   --text-color: #fff;
 }
+body.dark-mode .music-popup-content {
+  background: #111;
+  color: #eee;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+body.dark-mode .music-popup-content ul li {
+  color: #ccc;
+}
+
+body.dark-mode .music-popup-content ul li:hover {
+  background: #222;
+  color: #fff;
+}

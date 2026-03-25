@@ -380,9 +380,9 @@ input:checked + .slider::before {
   margin-top: 15px;
   padding: 7px 70px;
   width: 100%;
-  background: #4cafef;
+  background: #4c9fef;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
 }
