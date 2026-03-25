@@ -76,3 +76,7 @@ body.dark-mode #search::placeholder {
 body.dark-mode .range-labels {
   color: #fff !important;
 }
+body.dark-mode {
+  --bg-color: #111;
+  --text-color: #fff;
+}
