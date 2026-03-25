@@ -11,7 +11,7 @@ body.dark-mode .side-menu,
 body.dark-mode .donate-content,
 body.dark-mode .credit,
 body.dark-mode .menu {
-  background-color: #000000 !important;
+  background-color: #000 !important;
   color: #eee !important;
   border-color: rgba(255,255,255,0.2) !important;
 }

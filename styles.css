@@ -818,7 +818,6 @@ input:checked + .slider::before {
 .vip {
   color: gold;
   font-weight: bold;
-  text-shadow: 0 0 5px gold;
 }
 
 

@@ -86,10 +86,24 @@ function renderUser(user) {
   setAvatarClickable(true);
   
   const daysLeft = savedUser.expire ? getDaysLeft(savedUser.expire) : 0;
-  accountStatus.innerHTML = `Xin chào! ${daysLeft > 0 ? `<span class="vip">${savedUser.username}</span>` : savedUser.username}`;
-  memberStatus.textContent = savedUser.expire ?
-    (daysLeft > 0 ? `Gói thành viên: còn ${daysLeft} ngày (${savedUser.expire})` : `Gói thành viên: Đã hết hạn (${savedUser.expire})`) :
-    "Gói thành viên: Không";
+accountStatus.innerHTML = `Xin chào! ${
+  savedUser.expire && daysLeft > 0
+    ? `<span class="vip">${savedUser.username}</span>`
+    : savedUser.username
+}`;
+if (savedUser.expire) {
+  if (daysLeft > 0) {
+    memberStatus.innerHTML = `<span style="color: gold;">
+      Gói thành viên còn: ${daysLeft} ngày (${savedUser.expire})
+    </span>`;
+  } else {
+    memberStatus.innerHTML = `<span style="color: red;">
+      Gói thành viên: Đã hết hạn (${savedUser.expire})
+    </span>`;
+  }
+} else {
+  memberStatus.textContent = "Gói thành viên: Không";
+}
   
   memberStatus.classList.toggle("member-vip", daysLeft > 0);
   accountStatus.classList.add("show");
