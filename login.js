@@ -141,7 +141,7 @@ logoutBtn.addEventListener("click", () => {
   avatar.src = defaultAvatar;
   setAvatarClickable(false);
   accountStatus.textContent = "Hiện chưa đăng nhập";
-  memberStatus.textContent = "Hoặc liên hệ admin để đăng kí";
+  memberStatus.textContent = "Chưa có tài khoản? Liên hệ admin để đăng kí";
   memberStatus.classList.remove("member-vip");
   loginBtn.style.display = "inline-block";
   logoutBtn.style.display = "none";
