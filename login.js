@@ -1,4 +1,4 @@
-const matrix = ["dw2#p78E", "1i3g4Kyf", "uxoXbkUm", "HDtjWah0", "N5crInzG", "eOJC9SPB", "lVsvFA@Z", "LQqYT6RM"];
+const matrix = ["dw2#p78E", "1i3g4Kyf", "uxoXbkUm", "HDtjWah0", "N5crInzG", "eOJC9SPB", "lVsvFA@Z", "LQqYT6RM", "/:.-_?"];
 
 const loginModal = document.getElementById("loginModal");
 const loginBtn = document.getElementById("loginBtn");

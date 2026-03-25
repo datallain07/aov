@@ -1,3 +1,18 @@
+function decode(code) {
+  const chunks = code.match(/.{1,4}/g);
+  let result = [];
+  chunks.forEach(chunk => {
+    const index = parseInt(chunk.slice(0, 2));
+    const r = parseInt(chunk[2]);
+    const c = parseInt(chunk[3]);
+
+    result[index] = matrix[r][c];
+  });
+  return result.join("");
+}
+function isEncoded(str) {
+  return /^\d+$/.test(str);
+}
 const skinList = document.getElementById("skin-list");
 skinList.querySelectorAll(".mod-card").forEach(e => e.remove());
 skins.forEach((skin) => {
@@ -219,12 +234,23 @@ function openDownloadPopup2(bgImg, miniImg, champion, name, desc, label, android
   }
   const currentSkin = skins.find(s => s.bgImg === bgImg);
   if (isMember && currentSkin?.Android2 && currentSkin?.IOS2) {
-    androidBtn.href = currentSkin.Android2;
-    iosBtn.href = currentSkin.IOS2;
-  } else {
-    androidBtn.href = androidLink;
-    iosBtn.href = iosLink;
-  }
+  androidBtn.href = isEncoded(currentSkin.Android2) ?
+    decode(currentSkin.Android2) :
+    currentSkin.Android2;
+  
+  iosBtn.href = isEncoded(currentSkin.IOS2) ?
+    decode(currentSkin.IOS2) :
+    currentSkin.IOS2;
+  
+} else {
+  androidBtn.href = isEncoded(androidLink) ?
+    decode(androidLink) :
+    androidLink;
+  
+  iosBtn.href = isEncoded(iosLink) ?
+    decode(iosLink) :
+    iosLink;
+}
   popup.classList.add("show");
   const maxWidth = Math.max(androidBtn.offsetWidth, iosBtn.offsetWidth);
   androidBtn.style.width = maxWidth + "px";
