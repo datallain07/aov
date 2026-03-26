@@ -86,7 +86,7 @@ const items=document.querySelectorAll('.menu-item'),
 let stopGlow = null,
   level = localStorage.getItem("rgbGlowLevel") !== null ?
   parseInt(localStorage.getItem("rgbGlowLevel")) :
-  1,
+  2,
   activeItem = null;
 rgbRange.value=level;
 
