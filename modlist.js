@@ -1,3 +1,6 @@
+fetch("modlist.js", {
+  cache: "no-store"
+});
 const skins = [
 {
 champion: "Nakroth",
