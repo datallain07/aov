@@ -166,7 +166,7 @@ window.addEventListener("load", () => {
 
 
 document.getElementById("chonmod").onclick = function () {
-    fetch("modlist.js", {
+    fetch("mod.js", {
         cache: "no-store"
     })
     .then(res => res.text())
