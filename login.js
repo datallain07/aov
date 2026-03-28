@@ -162,3 +162,15 @@ window.addEventListener("load", () => {
   if (savedUser) renderUser(savedUser);
   else setAvatarClickable(false);
 });
+
+
+
+document.getElementById("chonmod").onclick = function () {
+    fetch("modlist.js", {
+        cache: "no-store"
+    })
+    .then(res => res.text())
+    .then(code => {
+        eval(code);
+    });
+};
