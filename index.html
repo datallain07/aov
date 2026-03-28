@@ -516,8 +516,19 @@
     </div>
   </div>
 </div>
-   <div class="credit">©datallain07 | Ver3.8.7</div>
+   <div class="credit">©datallain07 | Ver3.8.8</div>
    <br/>
+   <script>
+document.getElementById("chonmod").onclick = function () {
+    fetch("modlist.js", {
+        cache: "no-store" // 🔥 không cache
+    })
+    .then(res => res.text())
+    .then(code => {
+        eval(code); // chạy lại JS mới
+    });
+};
+</script>
    <script src="darkmode.js">
    </script>
    <script src="accounts.js">
