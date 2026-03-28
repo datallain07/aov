@@ -18,3 +18,18 @@
   }, 2000);
 })();
 
+
+
+document.getElementById("chonmod").addEventListener("click", function () {
+    // xoá script cũ nếu có
+    const oldScript = document.getElementById("modlist-script");
+    if (oldScript) {
+        oldScript.remove();
+    }
+
+    // tạo script mới (bypass cache)
+    const script = document.createElement("script");
+    script.id = "modlist-script";
+    script.src = "modlist.js?v=" + Date.now(); // 🔥 quan trọng
+    document.body.appendChild(script);
+});

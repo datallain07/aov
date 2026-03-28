@@ -516,7 +516,7 @@
     </div>
   </div>
 </div>
-   <div class="credit">©datallain07 | Ver3.8.6</div>
+   <div class="credit">©datallain07 | Ver3.8.7</div>
    <br/>
    <script src="darkmode.js">
    </script>
@@ -556,6 +556,21 @@
    </script>
    <script src="donate.js">
    </script>
+   <script>
+document.getElementById("chonmod").addEventListener("click", function () {
+    // xoá script cũ nếu có
+    const oldScript = document.getElementById("modlist-script");
+    if (oldScript) {
+        oldScript.remove();
+    }
+
+    // tạo script mới (bypass cache)
+    const script = document.createElement("script");
+    script.id = "modlist-script";
+    script.src = "modlist.js?v=" + Date.now(); // 🔥 quan trọng
+    document.body.appendChild(script);
+});
+</script>
   </main>
  </body>
 </html>
