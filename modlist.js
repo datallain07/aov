@@ -2,7 +2,7 @@ const skins = [
 {
 champion: "Nakroth",
 name: "Xiao",
-label: "#Genshin Impact | 29thg3",
+label: "#Genshin Impact | 28thg3",
 bgImg: "img/xiao.png",
 miniImg: "img/xiao_mini.png",
 videoPreview: "video/xiao.mp4",
