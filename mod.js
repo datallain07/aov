@@ -2,7 +2,7 @@ const skins = [
 {
 champion: "Raz",
 name: "Wriothesley",
-label: "#Honkai: Star Rail | 30thg3",
+label: "#Genshin Impact | 30thg3",
 bgImg: "img/wriothesley.png",
 miniImg: "img/wriothesley_mini.png",
 videoPreview: "video/wriothesley.mp4",
