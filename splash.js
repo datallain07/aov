@@ -8,7 +8,7 @@
    • Gộp 2 listener document-click trùng nhau thành 1.
    ========================================================================= */
 /* Chạy tối đa `limit` tác vụ async cùng lúc, GIỮ NGUYÊN thứ tự kết quả. */
-Object.keys(localStorage).filter(k=>k.startsWith('image_exists_')).forEach(k=>localStorage.removeItem(k))
+
 async function mapLimit(items, limit, worker) {
   const results = new Array(items.length);
   let next = 0;
@@ -320,6 +320,7 @@ function convertSplashIdToHeadId(fullId) {
   headGrid.innerHTML = `
     <div style="
       font-size:12px;
+      text-align:center;
       color:rgba(255,255,255,0.5);
     ">
       Đang tải danh sách tướng...

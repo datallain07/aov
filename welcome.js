@@ -1,3 +1,4 @@
+localStorage.clear()
 const popup = document.getElementById("welcome-popup");
 const closeBtn = document.getElementById("close-popup");
 let canClose = false;
