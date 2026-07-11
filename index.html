@@ -2,22 +2,16 @@
 <html lang="vi">
  <head>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=0.9, user-scalable=no" name="viewport"/>
-  <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control">
-   <meta content="no-cache" http-equiv="Pragma"/>
-   <meta content="0" http-equiv="Expires"/>
-   <title>
-    Web mod skin Đạt Allain
-   </title>
-   <link href="styles.css" rel="stylesheet"/>
-   <link href="darkmode.css" rel="stylesheet"/>
-   <link href="splash.css" rel="stylesheet"/>
-   <link href="skinlist.css" rel="stylesheet"/>
-   <link href="xapk.css" rel="stylesheet"/>
-   <link href="settingsanimation.css" rel="stylesheet"/>
-   <link href="notify.css" rel="stylesheet"/>
-   <link href="img/datallain.png" rel="icon" type="image/png"/>
-  </meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web mod skin Đạt Allain</title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="darkmode.css" rel="stylesheet"/>
+  <link href="splash.css" rel="stylesheet"/>
+  <link href="skinlist.css" rel="stylesheet"/>
+  <link href="xapk.css" rel="stylesheet"/>
+  <link href="settingsanimation.css" rel="stylesheet"/>
+  <link href="components.css" rel="stylesheet"/>
+  <link href="img/datallain.png" rel="icon" type="image/png"/>
  </head>
  <body>
   <header>
@@ -204,236 +198,8 @@
    </div>
   </div>
   <main class="menu">
-   <div class="menu-item">
-    <img class="icon-img" src="icons/mb.png"/>
-    <div class="text">
-     <strong>
-      DONATE
-     </strong>
-     <small>
-      Donate cho admin để ra mod nhanh hơn🐧
-     </small>
-    </div>
-   </div>
-   <div class="menu-item" id="chonmod">
-    <img class="icon-img" src="icons/chonmod.png"/>
-    <div class="text">
-     <strong>
-      CHỌN MOD
-     </strong>
-     <small>
-      Click để chọn một bản mod
-     </small>
-     <div class="skin-list" id="skin-list"></div>
-    </div>
-   </div>
-   <div class="menu-item">
-    <img class="icon-img" src="icons/caimod.png"/>
-    <div class="text">
-     <a href="https://youtu.be/TxR--AG0fuU" target="_blank">
-      <strong>
-       HƯỚNG DẪN CÀI MOD [iOS]
-      </strong>
-      <small>
-       Click để xem hướng dẫn cài mod iOS
-      </small>
-     </a>
-    </div>
-   </div>
-   <div class="menu-item">
-    <img class="icon-img" src="icons/caimod.png"/>
-    <div class="text">
-     <a href="https://youtu.be/0j0pVny0ibI" target="_blank">
-      <strong>
-       HƯỚNG DẪN CÀI MOD [Android]
-      </strong>
-      <small>
-       Click để xem hướng dẫn cài mod Android
-      </small>
-     </a>
-    </div>
-   </div>
-   <div class="menu-item">
-    <img class="icon-img" src="icons/res.png"/>
-    <div class="text">
-     <a href="https://link4m.net/SntX7" target="_blank">
-      <strong>
-       RESOURCES 8thg7 [Android]
-      </strong>
-      <small>
-       Click để tải
-      </small>
-     </a>
-    </div>
-   </div>
-   <div class="menu-item" id="open-splash">
-    <img class="icon-img" src="icons/image.png"/>
-    <div class="text">
-     <strong>
-      THƯ VIỆN SPLASH ART AOV
-     </strong>
-     <small>
-      Click để xem splash art (tốn nhiều dữ liệu, nên sử dụng wifi)
-     </small>
-     <div class="hidden" id="splash-container">
-      <input id="search" placeholder="🔎 Tìm kiếm bằng id hoặc tên...">
-       <div class="dat2" id="head-grid">
-       </div>
-      </input>
-     </div>
-    </div>
-   </div>
-   <div class="menu-item" id="open-server-list">
-    <img class="icon-img" src="icons/aov.png"/>
-    <div class="text">
-     <strong>
-      DANH SÁCH MÁY CHỦ AOV
-     </strong>
-     <small>
-      Click để xem hoặc tải APK/XAPK
-     </small>
-     <div class="menu3-list">
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qsw2kfcvjqMPhkjOguf8Snrhl7XnoaPC">
-       <img class="icon-img2" src="appicon/Z.webp"/>
-       <div class="text">
-        <strong>
-         LIÊN QUÂN MOBILE [VN]
-        </strong>
-        <small>
-         com.garena.game.kgvn
-        </small>
-        <div class="label-top-right">
-         1.58.1.2 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qtIX8Os7MmqvQQtr5DGYNEeyS3FXYj48">
-       <img class="icon-img2" src="appicon/GL.webp"/>
-       <div class="text">
-        <strong>
-         ARENA OF VALOR [GL]
-        </strong>
-        <small>
-         com.ngame.allstar.eu
-        </small>
-        <div class="label-top-right">
-         1.58.1.2 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qiyhRDMCCsweJ9hUxcDGA3d4RNIaz9EE">
-       <img class="icon-img2" src="appicon/TH.webp"/>
-       <div class="text">
-        <strong>
-         REALM OF VALOR [TH]
-        </strong>
-        <small>
-         com.garena.game.kgth
-        </small>
-        <div class="label-top-right">
-         1.58.1.7 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qjyOCRN3lMyAG0KHeivOTwT01VYRTjg_">
-       <img class="icon-img2" src="appicon/Z.webp"/>
-       <div class="text">
-        <strong>
-         傳說對決 [TW]
-        </strong>
-        <small>
-         com.garena.game.kgtw
-        </small>
-        <div class="label-top-right">
-         1.59.1.1 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qyFH_LJ61gsbzrn0JqjeVA2Y_hxQTQL7">
-       <img class="icon-img2" src="appicon/CN.webp"/>
-       <div class="text">
-        <strong>
-         先行服 [CN]
-        </strong>
-        <small>
-         com.tencent.ngame.chty
-        </small>
-        <div class="label-top-right">
-         1.58.5.1 | APK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1q0vR8ofZOzgNubMh4tZ4euAYC3fgiM7T">
-       <img class="icon-img2" src="appicon/JP.webp"/>
-       <div class="text">
-        <strong>
-         アリーナ・オブ・ヴァラー [JP]
-        </strong>
-        <small>
-         com.tencent.ngjp
-        </small>
-        <div class="label-top-right">
-         1.58.1.2 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item" data-link="https://drive.google.com/uc?export=download&amp;id=1qWVLnuzvFdVENNlrSpvkKzPDcGVdy8bu">
-       <img class="icon-img2" src="appicon/ID.webp"/>
-       <div class="text">
-        <strong>
-         ARENA OF VALOR [ID]
-        </strong>
-        <small>
-         com.garena.game.kgid
-        </small>
-        <div class="label-top-right">
-         1.59.1.3 | XAPK
-        </div>
-       </div>
-      </div>
-      <div class="menu3-item">
-       <img class="icon-img2" src="appicon/KR.webp"/>
-       <div class="text">
-        <strong>
-         펜타스톰 [KR]
-        </strong>
-        <small>
-         com.netmarble.pentastorm
-        </small>
-        <div class="label-top-right">
-         Ngừng phát hành
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="menu-item">
-    <img class="icon-img" src="icons/congdong.png"/>
-    <div class="text">
-     <a href="https://zalo.me/g/twwfye619" target="_blank">
-      <strong>
-       NHÓM CHAT ZALO
-      </strong>
-      <small>
-       Click để tham gia nhóm chat
-      </small>
-     </a>
-    </div>
-   </div>
-   <div class="menu-item">
-    <img class="icon-img" src="icons/16.png"/>
-    <div class="text">
-     <a href="https://link4m.net/XzTOjPAn" target="_blank">
-      <strong>
-       XOÁ LOGO 16+
-      </strong>
-      <small>
-       Click để tải bản mod xoá logo 16+ (Android&iOS)
-      </small>
-     </a>
-    </div>
-   </div>
+   <!-- Các mục menu được dựng tự động từ dữ liệu trong menudata.js -->
+   <div id="menu-items"></div>
    <div class="donate-overlay" id="donate-popup">
     <div class="donate-content">
      <div class="donate-img-wrapper">
@@ -481,22 +247,16 @@
    <div class="dl-popup" id="dlPopupX">
     <div class="dl-box">
      <div class="preview-area">
-      <img class="preview-bg" id="dlBgX">
-       <div class="preview-info">
-        <img class="preview-mini" id="dlMiniX">
-         <div class="preview-texts">
-          <div class="dl-label" id="dlLabelX">
-          </div>
-          <div class="preview-champion" id="dlChampX">
-          </div>
-          <div class="preview-title" id="dlNameX">
-          </div>
-          <div class="preview-desc" id="dlDescX">
-          </div>
-         </div>
-        </img>
+      <img class="preview-bg" id="dlBgX" alt="">
+      <div class="preview-info">
+       <img class="preview-mini" id="dlMiniX" alt="">
+       <div class="preview-texts">
+        <div class="dl-label" id="dlLabelX"></div>
+        <div class="preview-champion" id="dlChampX"></div>
+        <div class="preview-title" id="dlNameX"></div>
+        <div class="preview-desc" id="dlDescX"></div>
        </div>
-      </img>
+      </div>
      </div>
      <div class="dl-popup-title-x" id="dlTitleX">
       Bạn muốn tải xuống mod cho?
@@ -529,46 +289,31 @@
     </div>
   </div>
 </div>
-   <div class="credit">©datallain07 | Ver4.7.7</div>
+   <div class="credit">©datallain07 | Ver4.7.9</div>
    <br/>
-   <script src="darkmode.js">
-   </script>
-   <script src="accounts.js">
-   </script>
-   <script src="login.js">
-   </script>
-   <script src="skinmod.js">
-   </script>
-   <script src="xapk.js">
-   </script>
-   <script src="heroskinshop.js">
-   </script>
-   <script src="skinname.js">
-   </script>
-   <script src="herolist.js">
-   </script>
-   <script src="script.js">
-   </script>
-   <script src="splash.js">
-   </script>
-   <script src="skinlist.js">
-   </script>
-   <script src="lowquality.js">
-   </script>
-   <script src="settingsanimation.js">
-   </script>
-   <script src="checkversion.js">
-   </script>
-   <script src="checkskin.js">
-   </script>
-   <script src="sound.js">
-   </script>
-   <script src="welcome.js">
-   </script>
-   <script src="rgb.js">
-   </script>
-   <script src="donate.js">
-   </script>
+   <!-- Tất cả dùng defer: tải song song, chạy theo đúng thứ tự sau khi HTML
+        đã phân tích xong, không chặn hiển thị trang.
+        menudata.js đứng đầu để dựng menu trước khi các script khác gắn sự kiện. -->
+   <script defer src="menudata.js"></script>
+   <script defer src="darkmode.js"></script>
+   <script defer src="accounts.js"></script>
+   <script defer src="login.js"></script>
+   <script defer src="skinmod.js"></script>
+   <script defer src="xapk.js"></script>
+   <script defer src="heroskinshop.js"></script>
+   <script defer src="skinname.js"></script>
+   <script defer src="herolist.js"></script>
+   <script defer src="script.js"></script>
+   <script defer src="splash.js"></script>
+   <script defer src="skinlist.js"></script>
+   <script defer src="lowquality.js"></script>
+   <script defer src="settingsanimation.js"></script>
+   <script defer src="checkversion.js"></script>
+   <script defer src="checkskin.js"></script>
+   <script defer src="sound.js"></script>
+   <script defer src="welcome.js"></script>
+   <script defer src="rgb.js"></script>
+   <script defer src="donate.js"></script>
   </main>
  </body>
 </html>

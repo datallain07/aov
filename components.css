@@ -1,0 +1,71 @@
+/* =========================================================================
+   components.css — gom các style trước đây bị nhét bằng JS
+   -------------------------------------------------------------------------
+   • donate.js & welcome.js trước đây tạo thẻ <style> lúc chạy -> chuyển vào đây.
+   • splash.js trước đây set hàng chục element.style.x lặp lại cho mỗi ảnh
+     -> thay bằng class, JS gọn hơn và trình duyệt xử lý nhanh hơn.
+   ========================================================================= */
+
+/* --- từ donate.js / welcome.js --- */
+#donate-popup .donate-content,
+#welcome-popup .popup-content {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+/* --- Thư viện splash art (thay cho inline style trong splash.js) --- */
+.splash-wrapper {
+  position: relative;
+  margin-top: 8px;
+}
+/* Phải ghi rõ ".splash-container img.xxx" để THẮNG luật ".splash-container img
+   { width:110px }" trong splash.css (luật đó ưu tiên cao hơn class đơn, chính
+   là nguyên nhân trước đây ảnh bị ép nhỏ 110px và cắt cụt thành 2 cột). */
+.splash-container img.splash-big {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+.splash-id {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+.splash-container img.splash-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  image-rendering: auto;
+  clip-path: inset(1px);
+  transform: scale(1.01);
+  transform-origin: center;
+}
+.splash-container img.splash-head {
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  pointer-events: auto;
+  background: transparent;
+  padding: 0;
+  /* màu viền (border) vẫn set động theo màu trung bình ảnh trong splash.js */
+}
+.splash-loading { color: gray; }
+.splash-error { color: red; }
