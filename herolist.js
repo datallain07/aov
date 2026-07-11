@@ -124,5 +124,7 @@ const heroList = {
   596: "Goverra",
   597: "Biron",
   598: "Bolt Baron",
-  599: "Billow"
+  599: "Billow",
+  584: "Flowborn",
+  593: "Tamyn"
 };

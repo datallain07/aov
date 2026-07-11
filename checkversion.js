@@ -9,7 +9,7 @@
     danh sách mod đã do skinlist.js dựng sẵn.)
    ========================================================================= */
 (function autoReload() {
-  const CHECK_EVERY_MS = 60000; // 60 giây
+  const CHECK_EVERY_MS = 60000; 
   let known = null;
 
   async function fetchVersion() {
@@ -18,12 +18,12 @@
       if (!res.ok) return null;
       return (await res.text()).trim();
     } catch (e) {
-      return null; // mất mạng thì bỏ qua, thử lại lần sau
+      return null;
     }
   }
 
   (async () => {
-    known = await fetchVersion(); // mốc ban đầu
+    known = await fetchVersion();
     setInterval(async () => {
       const latest = await fetchVersion();
       if (latest && known && latest !== known) location.reload();
