@@ -7,7 +7,6 @@
    • Style ảnh chuyển sang class (components.css) thay vì set inline lặp lại.
    • Gộp 2 listener document-click trùng nhau thành 1.
    ========================================================================= */
-
 /* Chạy tối đa `limit` tác vụ async cùng lúc, GIỮ NGUYÊN thứ tự kết quả. */
 async function mapLimit(items, limit, worker) {
   const results = new Array(items.length);
@@ -60,29 +59,23 @@ function showToast(message, duration = 2000) {
   setTimeout(() => toast.classList.remove('show'), duration);
 }
 
+// Dọn cache cũ: bản trước lưu image_exists_* trong localStorage tới 1 năm,
+// khiến skin mới thêm không hiện vì kết quả "không tồn tại" bị giữ lại.
+try {
+  Object.keys(localStorage)
+    .filter(k => k.startsWith('image_exists_'))
+    .forEach(k => localStorage.removeItem(k));
+} catch (e) {}
+
+// KHÔNG lưu cache vào localStorage nữa. Chỉ nhớ trong PHIÊN hiện tại để không
+// kiểm tra trùng 1 URL nhiều lần; tải lại trang là kiểm tra mới hoàn toàn.
 const imageCacheMemory = {};
 function checkImageExists(url) {
-  const cacheKey = 'image_exists_' + url;
-  if (cacheKey in imageCacheMemory) return Promise.resolve(imageCacheMemory[cacheKey]);
-  const cached = localStorage.getItem(cacheKey);
-  if (cached) {
-    const data = JSON.parse(cached);
-    const maxAge = 1000 * 60 * 60 * 24 * 365;
-    if (Date.now() - data.timestamp < maxAge) {
-      imageCacheMemory[cacheKey] = data.exists;
-      return Promise.resolve(data.exists);
-    }
-  }
+  if (url in imageCacheMemory) return Promise.resolve(imageCacheMemory[url]);
   return new Promise(resolve => {
     const img = new Image();
-    img.onload = () => {
-      localStorage.setItem(cacheKey, JSON.stringify({ exists: true, timestamp: Date.now() }));
-      imageCacheMemory[cacheKey] = true; resolve(true);
-    };
-    img.onerror = () => {
-      localStorage.setItem(cacheKey, JSON.stringify({ exists: false, timestamp: Date.now() }));
-      imageCacheMemory[cacheKey] = false; resolve(false);
-    };
+    img.onload  = () => { imageCacheMemory[url] = true;  resolve(true); };
+    img.onerror = () => { imageCacheMemory[url] = false; resolve(false); };
     img.src = url;
   });
 }
@@ -323,7 +316,21 @@ function convertSplashIdToHeadId(fullId) {
 }
 
 (async () => {
+  headGrid.innerHTML = `
+    <div style="
+      font-size:12px;
+      text-align:center;
+      color:rgba(255,255,255,0.5);
+    ">
+      Đang tải danh sách tướng...
+    </div>
+  `;
+  
   await loadHeroHeads();
+  
+  const loading = headGrid.querySelector('div');
+  if (loading) loading.remove();
+  
   updateHeroNames(showSplashId);
   updateSplashIdVisibility(showSplashId);
   updateSplashLabelVisibility(showSplashLabel);
