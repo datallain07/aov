@@ -58,12 +58,4 @@ popup.addEventListener("click", function(e) {
     closePopup();
   }
 });
-
-const welcomeStyle = document.createElement("style");
-welcomeStyle.innerHTML = `
-#welcome-popup .popup-content {
-  border: 2px solid rgba(255,255,255,0.2);
-  border-radius: 12px;
-}
-`;
-document.head.appendChild(welcomeStyle);
+/* Style border của #welcome-popup .popup-content đã chuyển sang components.css */

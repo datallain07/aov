@@ -1,35 +1,32 @@
-(async function autoReload() {
-  const creditEl = document.querySelector('.credit');
-  if (!creditEl) return;
+/* =========================================================================
+   checkversion.js — kiểm tra bản mới (đã tối ưu)
+   -------------------------------------------------------------------------
+   TRƯỚC: fetch() lại TOÀN BỘ file HTML mỗi 2 giây chỉ để so 1 chuỗi version
+          -> tốn băng thông, hao pin, chạy liên tục vô ích.
+   NAY:   chỉ tải file version.txt (vài byte) mỗi 60 giây. Khi số version khác
+          với lúc mở trang thì mới reload. Nhẹ hơn hàng trăm lần.
+   (Đã bỏ đoạn nạp modlist.js?v=Date.now() cũ vì gây tải lại + không cần thiết:
+    danh sách mod đã do skinlist.js dựng sẵn.)
+   ========================================================================= */
+(function autoReload() {
+  const CHECK_EVERY_MS = 60000; // 60 giây
+  let known = null;
 
-  const currentVersion = creditEl.textContent.match(/Ver([\d.]+)/)?.[1];
-
-  async function fetchLatestVersion() {
-    const res = await fetch(window.location.href.split('#')[0] + '?_t=' + Date.now());
-    const html = await res.text();
-    return html.match(/<div class="credit">©datallain07 \| Ver([\d.]+)<\/div>/)?.[1];
+  async function fetchVersion() {
+    try {
+      const res = await fetch("version.txt?_t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) return null;
+      return (await res.text()).trim();
+    } catch (e) {
+      return null; // mất mạng thì bỏ qua, thử lại lần sau
+    }
   }
 
-  setInterval(async () => {
-    const latestVersion = await fetchLatestVersion();
-    if (latestVersion && latestVersion !== currentVersion) {
-      location.reload(true);
-    }
-  }, 2000);
+  (async () => {
+    known = await fetchVersion(); // mốc ban đầu
+    setInterval(async () => {
+      const latest = await fetchVersion();
+      if (latest && known && latest !== known) location.reload();
+    }, CHECK_EVERY_MS);
+  })();
 })();
-
-
-
-document.getElementById("chonmod").addEventListener("click", function () {
-    // xoá script cũ nếu có
-    const oldScript = document.getElementById("modlist-script");
-    if (oldScript) {
-        oldScript.remove();
-    }
-
-    // tạo script mới (bypass cache)
-    const script = document.createElement("script");
-    script.id = "modlist-script";
-    script.src = "modlist.js?v=" + Date.now(); // 🔥 quan trọng
-    document.body.appendChild(script);
-});
