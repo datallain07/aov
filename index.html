@@ -4,22 +4,14 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=0.9"/>
   <title>Web mod skin Đạt Allain</title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="darkmode.css" rel="stylesheet"/>
+  <link href="splashArt.css" rel="stylesheet"/>
+  <link href="skinlist.css" rel="stylesheet"/>
+  <link href="xapk.css" rel="stylesheet"/>
+  <link href="settingsanimation.css" rel="stylesheet"/>
+  <link href="components.css" rel="stylesheet"/>
   <link href="img/datallain.png" rel="icon" type="image/png"/>
-  <script>
-    window.__ASSET_VER = fetch("version.txt?_=" + Date.now(), { cache: "no-store" })
-      .then(function (r) { return r.ok ? r.text() : ""; })
-      .then(function (t) { return (t.trim() || String(Date.now())); })
-      .catch(function () { return String(Date.now()); });
-    window.__ASSET_VER.then(function (v) {
-      ["styles.css","darkmode.css","splashArt.css","skinlist.css",
-       "xapk.css","settingsanimation.css","components.css"].forEach(function (f) {
-        var l = document.createElement("link");
-        l.rel = "stylesheet";
-        l.href = f + "?v=" + v;
-        document.head.appendChild(l);
-      });
-    });
-  </script>
  </head>
  <body>
   <header>
@@ -296,22 +288,28 @@
     </div>
   </div>
 </div>
-   <div class="credit">©datallain07 | Ver4.8.9</div>
+   <div class="credit">©datallain07 | Ver4.9.0</div>
    <br/>
-   <script>
-     window.__ASSET_VER.then(function (v) {
-       ["menudata.js","darkmode.js","accounts.js","login.js","skinmod.js",
-        "xapk.js","heroskinshop.js","skinname.js","herolist.js","script.js",
-        "splashArt.js","skinlist.js","lowquality.js","settingsanimation.js",
-        "checkversion.js","checkskin.js","sound.js","welcome.js","rgb.js",
-        "donate.js"].forEach(function (f) {
-         var s = document.createElement("script");
-         s.src = f + "?v=" + v;
-         s.async = false;
-         document.body.appendChild(s);
-       });
-     });
-   </script>
+   <script defer src="menudata.js"></script>
+   <script defer src="darkmode.js"></script>
+   <script defer src="accounts.js"></script>
+   <script defer src="login.js"></script>
+   <script defer src="skinmod.js"></script>
+   <script defer src="xapk.js"></script>
+   <script defer src="heroskinshop.js"></script>
+   <script defer src="skinname.js"></script>
+   <script defer src="herolist.js"></script>
+   <script defer src="script.js"></script>
+   <script defer src="splashArt.js"></script>
+   <script defer src="skinlist.js"></script>
+   <script defer src="lowquality.js"></script>
+   <script defer src="settingsanimation.js"></script>
+   <script defer src="checkversion.js"></script>
+   <script defer src="checkskin.js"></script>
+   <script defer src="sound.js"></script>
+   <script defer src="welcome.js"></script>
+   <script defer src="rgb.js"></script>
+   <script defer src="donate.js"></script>
   </main>
  </body>
 </html>
