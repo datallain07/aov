@@ -1,17 +1,4 @@
-/* =========================================================================
-   menudata.js — DỮ LIỆU + BỘ DỰNG GIAO DIỆN MENU (data-driven rendering)
-   -------------------------------------------------------------------------
-   Ý TƯỞNG TỐI ƯU:
-   Trước đây mỗi mục menu là một khối <div class="menu-item">...</div> viết tay,
-   lặp đi lặp lại cùng một cấu trúc -> HTML dài, sửa 1 chỗ phải sửa nhiều nơi,
-   dễ sai. Vì tất cả dùng CHUNG một style, ta chỉ cần:
-     1) Mô tả nội dung bằng DỮ LIỆU (mảng object bên dưới).
-     2) Viết KHUÔN (template) 1 lần.
-     3) Dùng vòng lặp .map() để sinh ra HTML.
-   Thêm/bớt/sửa 1 mục = sửa 1 dòng dữ liệu, không đụng tới HTML.
-   ========================================================================= */
 
-/* --- 1. Danh sách MÁY CHỦ / APK (8 mục gần như giống hệt nhau) --- */
 const SERVER_LIST = [
   { icon: "appicon/Z.webp",  title: "LIÊN QUÂN MOBILE [VN]",        pkg: "com.garena.game.kgvn",       label: "1.58.1.2 | XAPK", link: "https://drive.google.com/uc?export=download&id=1qsw2kfcvjqMPhkjOguf8Snrhl7XnoaPC" },
   { icon: "appicon/GL.webp", title: "ARENA OF VALOR [GL]",          pkg: "com.ngame.allstar.eu",       label: "1.58.1.2 | XAPK", link: "https://drive.google.com/uc?export=download&id=1qtIX8Os7MmqvQQtr5DGYNEeyS3FXYj48" },
@@ -41,8 +28,8 @@ const MENU_ITEMS = [
   { type: "link", icon: "icons/caimod.png", title: "HƯỚNG DẪN CÀI MOD [Android]",
     sub: "Click để xem hướng dẫn cài mod Android", href: "https://youtu.be/0j0pVny0ibI" },
 
-  { type: "link", icon: "icons/res.png", title: "RESOURCES 8thg7 [Android]",
-    sub: "Click để tải", href: "https://link4m.net/SntX7" },
+  { type: "link", icon: "icons/res.png", title: "RESOURCES 23thg7 [Android]",
+    sub: "Click để tải", href: "https://drive.google.com/file/d/1eM8AYayFe8n3_WAhtAQ2E-PNHz6nbw-w/view?usp=drivesdk" },
 
   { type: "action", id: "open-splash", icon: "icons/image.png", title: "THƯ VIỆN SPLASH ART AOV",
     sub: "Click để xem splash art (tốn nhiều dữ liệu, nên sử dụng wifi)",
@@ -59,7 +46,7 @@ const MENU_ITEMS = [
     sub: "Click để tham gia nhóm chat", href: "https://zalo.me/g/twwfye619" },
 
   { type: "link", icon: "icons/16.png", title: "XOÁ LOGO 16+",
-    sub: "Click để tải bản mod xoá logo 16+ (Android&iOS)", href: "https://link4m.net/XzTOjPAn" }
+    sub: "Click để tải bản mod xoá logo 16+ (Android&iOS)", href: "https://drive.google.com/file/d/1rht8p-MieQLogikqKThyWyed9f9xDe4O/view?usp=drivesdk" }
 ];
 
 /* --- 3. KHUÔN (template) — viết 1 lần, dùng cho mọi mục --- */
