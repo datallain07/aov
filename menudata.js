@@ -28,8 +28,8 @@ const MENU_ITEMS = [
   { type: "link", icon: "icons/caimod.png", title: "HƯỚNG DẪN CÀI MOD [Android]",
     sub: "Click để xem hướng dẫn cài mod Android", href: "https://youtu.be/0j0pVny0ibI" },
 
-  { type: "link", icon: "icons/res.png", title: "RESOURCES 23thg7 [Android]",
-    sub: "Click để tải", href: "https://drive.google.com/file/d/1eM8AYayFe8n3_WAhtAQ2E-PNHz6nbw-w/view?usp=drivesdk" },
+  { type: "link", icon: "icons/res.png", title: "RESOURCES 12thg9 [Android]",
+    sub: "Click để tải", href: "https://drive.google.com/file/d/10wf5LSt4-zdr2PkKJVaKRywDFKaXhNZL/view?usp=drivesdk" },
 
   { type: "action", id: "open-splash", icon: "icons/image.png", title: "THƯ VIỆN SPLASH ART AOV",
     sub: "Click để xem splash art (tốn nhiều dữ liệu, nên sử dụng wifi)",
